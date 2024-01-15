@@ -151,7 +151,7 @@ const IntroductionPage = (props) => {
         infinite: true,
         swipeToSlide: true,
         speed: 500,
-
+        arrows: false,
         slidesToShow: 3,//number show each slide
         slidesToScroll: 3,//number item next 
         responsive: [
@@ -160,7 +160,6 @@ const IntroductionPage = (props) => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    arrows: false,
                 }
             },
             {
@@ -178,119 +177,119 @@ const IntroductionPage = (props) => {
 
 
     return (
-        <div className='wrapper' style={{backgroundColor: '#000000'}} >
+        <div className='wrapper' style={{ backgroundColor: '#0D1117' }} >
             <div className='banner' >
-                    <div className='banner_wrap'  >
-                        <div className='banner_left' >
-                            <img className='imgbanner' src="/images/left.gif" alt="">
-                            </img>
-                        </div>
-                        <div className='banner_right' >
-                            <img className='imgbanner' src="/images/right.gif" alt="" >
-                            </img>
-                        </div>
+                <div className='banner_wrap'  >
+                    <div className='banner_left' >
+                        <img className='imgbanner' src="/images/left.gif" alt="">
+                        </img>
+                    </div>
+                    <div className='banner_right' >
+                        <img className='imgbanner' src="/images/right.gif" alt="" >
+                        </img>
                     </div>
                 </div>
-            <div/>
+            </div>
+            <div />
             <TopNav />
             <div className="content2">
-            <section className="row g-0">
-                <div className="col-1"></div>
-                <div className="col-md-5 mt-5 p-3">
-                    <p className="mt-5" style={{ fontSize: "25px", color: "#8298FF" }}>Chào mừng đến với chúng tôi</p>
-                    <p><h3 style={{ color: "#fff" }}>Với kinh nghiệm hơn 7 năm, chúng tôi sẽ đem đến cho bạn nhưng trải nghiệm tốt nhất</h3></p>
-                    <div className="col-12">
-                        <button type="submit" className="btn pb-2 pt-2 px-5 pe-5 mt-4" style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }} onClick={() => moveToBookingPage()}>Đặt lịch ngay</button>
+                <section className="row g-0">
+                    <div className="col-1"></div>
+                    <div className="col-md-5 mt-5 p-3">
+                        <p className="mt-5 textGradient" style={{ fontSize: "25px" }}>Chào mừng đến với chúng tôi</p>
+                        <p><h3 style={{ color: "#fff" }}>Với kinh nghiệm hơn 7 năm, chúng tôi sẽ đem đến cho bạn nhưng trải nghiệm tốt nhất</h3></p>
+                        <div>
+                            <button type="submit" className="btn pb-2 pt-2 px-5 pe-5 mt-4 btnGradient" onClick={() => moveToBookingPage()}>Đặt lịch ngay</button>
+                        </div>
                     </div>
-                </div>
-                <div className="col-md-6 d-none d-md-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
+                    <div className="col-md-6 d-none d-md-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
 
-            </section >
-            <section className="mt-5 container-fluid" style={{ backgroundImage: "url(/images/anhkhuyencao.jpg)", backgroundRepeat: "no-repeat", backgroundPosition: "center 30%", backgroundSize: "cover"}}>
-                <div className="row">
-                    <div className="col-6"></div>
-                    <div className="col-md-5">
-                        <p><h5 style={{ color: "white" }}>CÁC CHUYÊN GIA LUÔN KHUYẾN CÁO</h5></p>
-                        <p>
-                            <span style={{ fontSize: "20px", color: "#8298FF" }}>Đừng bao giờ quên vệ sinh răng miệng</span><br />
-                            <span style={{ color: "white" }}>Hãy luôn vệ sinh sạch sẽ răng miệng của chính bản thân bằng cách thường xuyên súc miệng và đánh răng ít nhất 2 lần/ngày.</span>
-                        </p>
-                        <p className="mt-4">
-                            <span style={{ fontSize: "20px", color: "#8298FF" }}>Đừng quá mạnh tay khi chải răng</span><br />
-                            <span style={{ color: "white" }}>Không nên đánh răng quá mạnh, nên đánh răng nhẹ nhàng theo vòng tròn bao gồm cả mặt trong, mặt ngoài của răng và lưỡi.</span>
-                        </p>
-                        <p className="mt-4">
-                            <span style={{ fontSize: "20px", color: "#8298FF" }}>Thăm khám răng miệng thường xuyên</span><br />
-                            <span style={{ color: "white" }}>Nên khám răng theo khuyến nghị của nha sĩ, khoảng 6 tháng/lần. Khi có các dấu hiệu sau đề nghị đi khám ngay: Đau răng, sưng hoặc xuất huyết lưỡi, sưng lợi và vùng xương hàm, có vết loét niêm mạc miệng.</span>
-                        </p>
+                </section >
+                <section className="mt-5 container-fluid" style={{ backgroundImage: "url(/images/anhkhuyencao.png)", backgroundRepeat: "no-repeat", backgroundPosition: "center left 30%", backgroundSize: "cover" }}>
+                    <div className="row">
+                        <div className="col-6"></div>
+                        <div className="col-md-5">
+                            <p><h5 style={{ color: "white" }}>CÁC CHUYÊN GIA LUÔN KHUYẾN CÁO</h5></p>
+                            <p>
+                                <span style={{ fontSize: "20px", color: "#8298FF" }}>Đừng bao giờ quên vệ sinh răng miệng</span><br />
+                                <span style={{ color: "white" }}>Hãy luôn vệ sinh sạch sẽ răng miệng của chính bản thân bằng cách thường xuyên súc miệng và đánh răng ít nhất 2 lần/ngày.</span>
+                            </p>
+                            <p className="mt-4">
+                                <span style={{ fontSize: "20px", color: "#8298FF" }}>Đừng quá mạnh tay khi chải răng</span><br />
+                                <span style={{ color: "white" }}>Không nên đánh răng quá mạnh, nên đánh răng nhẹ nhàng theo vòng tròn bao gồm cả mặt trong, mặt ngoài của răng và lưỡi.</span>
+                            </p>
+                            <p className="mt-4">
+                                <span style={{ fontSize: "20px", color: "#8298FF" }}>Thăm khám răng miệng thường xuyên</span><br />
+                                <span style={{ color: "white" }}>Nên khám răng theo khuyến nghị của nha sĩ, khoảng 6 tháng/lần. Khi có các dấu hiệu sau đề nghị đi khám ngay: Đau răng, sưng hoặc xuất huyết lưỡi, sưng lợi và vùng xương hàm, có vết loét niêm mạc miệng.</span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section className="mt-5 container">
-                <h3 align="center" style={{ color: "white" }}>Các dịch vụ</h3>
-                <div className="row">
-                    {serviceList.map((item, index) => {
-                        return (
-                            <div className="col-md-4 pe-5 px-5 pt-2 pb-4">
-                                <p style={{ color: "white" }}>
-                                    <h5>{item.name}</h5>
-                                    <span className="truncation-text">{item.description}</span>
-                                </p>
-                                <NavLink to="/services" className="text-decoration-none">Xem thêm &rarr;</NavLink>
-                            </div>
-                        )
-                    })}
-                </div>
-                <h5 className="mt-2" align="center"><NavLink to="/services" className="text-decoration-none customLink" style={{ color: "#000" }}>Xem thêm &rarr;</NavLink></h5>
-            </section>
-            <section className="container mt-5 mb-5">
-                <h4 align="center" style={{ color: "white" }}>Đội ngũ các chuyên gia nha sĩ</h4>
-                <div className="row">
-                    {doctorList.map((item, index) => {
-                        return (
-                            <div className="col-sm-6 col-md-3 p-4">
-                                <img alt="" src={item.image} style={{ width: "100%" }} />
-                                <p style={{ color: "white" }} className="mt-3">
-                                    {item.fullName}<br />
-                                    Chuyên khoa: {item.speciality}<br />
-                                    Chi nhánh:  {item.brach}
-                                </p>
-
-                            </div>
-                        )
-                    })}
-                </div>
-                <h5 className="mt-2" align="center"><NavLink to="/doctors" className="text-decoration-none customLink" style={{ color: "#000" }}>Xem thêm &rarr;</NavLink></h5>
-            </section>
-            <section className='container'>
-                <h3 style={{ color: "white" }} align="center">Phản hồi của khách hàng</h3>
-                <p style={{ color: "white" }} className='text-center'>Cảm ơn bạn đã tin tưởng chúng tôi</p>
-                <div className="container-fluid mt-4 "  align="center">
-                    <Slider {...settings} >
-                        {reviewList.map((item, index) => {
+                </section>
+                <section className="mt-5 container">
+                    <h3 align="center" style={{ color: "white" }}>Các dịch vụ</h3>
+                    <div className="row">
+                        {serviceList.map((item, index) => {
                             return (
-                                <div className="container mb-2" >
-                                    <div className="p-4" style={{ color: "white" }}>
-                                        <div className="custom-slider-item pt-5 pb-5 pe-3 px-3 mb-4" >
-                                            <p className="truncation-text">{item.review}</p>
-                                        </div>
-                                        <img alt="" className="img-thumbnail" src={item.image} style={{ borderRadius: "50%", width: "40%" }} />
-                                        <h5 className='mt-2'>{item.fullname}</h5>
-                                        <p>{item.brach}</p>
-                                    </div>
+                                <div className="col-md-4 pe-5 px-5 pt-2 pb-4">
+                                    <p style={{ color: "white" }}>
+                                        <h5>{item.name}</h5>
+                                        <span className="truncation-text">{item.description}</span>
+                                    </p>
+                                    <NavLink to="/services" className="text-decoration-none linkMore linkMoreSmall">Xem thêm &rarr;</NavLink>
                                 </div>
                             )
                         })}
+                    </div>
+                    <h5 className="mt-2" align="center"><NavLink to="/services" className="text-decoration-none linkMore linkMoreWhite">Xem thêm &rarr;</NavLink></h5>
+                </section>
+                <section className="container mt-5 mb-5">
+                    <h4 align="center" style={{ color: "white" }}>Đội ngũ các chuyên gia nha sĩ</h4>
+                    <div className="row">
+                        {doctorList.map((item, index) => {
+                            return (
+                                <div className="col-sm-6 col-md-3 p-4">
+                                    <img alt="" src={item.image} style={{ width: "100%" }} />
+                                    <p style={{ color: "white" }} className="mt-3">
+                                        {item.fullName}<br />
+                                        Chuyên khoa: {item.speciality}<br />
+                                        Chi nhánh:  {item.brach}
+                                    </p>
 
-                    </Slider>
-                </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <h5 className="mt-2" align="center"><NavLink to="/doctors" className="text-decoration-none linkMore linkMoreWhite">Xem thêm &rarr;</NavLink></h5>
+                </section>
+                <section className='container'>
+                    <h3 style={{ color: "white" }} align="center">Phản hồi của khách hàng</h3>
+                    <p style={{ color: "white" }} className='text-center'>Cảm ơn bạn đã tin tưởng chúng tôi</p>
+                    <div className="container-fluid mt-4 " align="center">
+                        <Slider {...settings} >
+                            {reviewList.map((item, index) => {
+                                return (
+                                    <div className="container mb-2" >
+                                        <div className="p-4" style={{ color: "white" }}>
+                                            <div className="custom-slider-item pt-5 pb-5 pe-3 px-3 mb-4" >
+                                                <p className="truncation-text">{item.review}</p>
+                                            </div>
+                                            <img alt="" className="img-thumbnail" src={item.image} style={{ borderRadius: "50%", width: "40%" }} />
+                                            <h5 className='mt-2'>{item.fullname}</h5>
+                                            <p>{item.brach}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
 
-            </section >
-            <Footer style={{ marginTop: "80px" }} />
+                        </Slider>
+                    </div>
+
+                </section >
+                <Footer style={{ marginTop: "80px" }} />
             </div>
-            
+
         </div >
-        
+
     );
 }
 export default IntroductionPage;

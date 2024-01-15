@@ -134,9 +134,9 @@ const ContactPage = (props) => {
 
 
     return (
-        <div style={{backgroundColor: "black"}}>
+        <div style={{ backgroundColor: "black" }}>
             <TopNav />
-            <header className="pt-4 pb-4 footer" style={{color: "#FFF" }}><h3 align="center">Liên lạc</h3></header>
+            <header className="pt-4 pb-4 headerPage"><h3 align="center">Liên lạc</h3></header>
             <section className="container mt-5">
                 <div className="row">
                     <div className="col-md-3"></div>
@@ -149,7 +149,7 @@ const ContactPage = (props) => {
             <section className="container mb-5">
                 <div className="mt-4">
 
-                    <div className="row"  style={{color: "#FFF" }}>
+                    <div className="row" style={{ color: "#FFF" }}>
                         {braches.map((item, index) => {
                             return (
                                 <div className="mt-4">
@@ -180,14 +180,14 @@ const ContactPage = (props) => {
                 </div>
             </section >
             <section className='container'>
-                <h3 align="center"  style={{color: "#FFF" }}>Phản hồi của khách hàng</h3>
-                <p className='text-center'  style={{color: "#FFF" }}>Cảm ơn bạn đã tin tưởng chúng tôi</p>
+                <h3 align="center" style={{ color: "#FFF" }}>Phản hồi của khách hàng</h3>
+                <p className='text-center' style={{ color: "#FFF" }}>Cảm ơn bạn đã tin tưởng chúng tôi</p>
                 <div className="container-fluid mt-4" align="center">
                     <Slider {...settings}>
                         {reviewList.map((item, index) => {
                             return (
                                 <div className="container mb-2" >
-                                    <div className="p-4"  style={{color: "#FFF" }}>
+                                    <div className="p-4" style={{ color: "#FFF" }}>
                                         <div className="custom-slider-item pt-5 pb-5 pe-3 px-3 mb-4" >
                                             <p className="truncation-text">{item.review}</p>
                                         </div>

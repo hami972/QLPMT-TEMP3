@@ -70,17 +70,17 @@ const DoctorsPage = (props) => {
     }
 
     return (
-        <div style={{backgroundColor: 'black'}}>
+        <div style={{ backgroundColor: '#0D1117' }}>
             <TopNav />
-            <header className="pt-4 pb-4 footer"  style={{  color: "#FFF" }}><h3 align="center">Bác sĩ của chúng tôi</h3></header>
+            <header className="pt-4 pb-4 headerPage"><h3 align="center">Bác sĩ của chúng tôi</h3></header>
             <section className="container mt-5 mb-5">
                 <div className="row">
                     <div className="col-md-5 text-center">
                         <img alt="" src="/images/kham3.jpg" style={{ width: "90%" }} />
                     </div>
                     <div className="col-md-7 align-self-center mt-2">
-                        <p><h4  style={{color: "#FFF" }}>Đội ngũ bác sĩ</h4></p>
-                        <p  style={{color: "#FFF" }}>Bác sĩ trong phòng khám nha khoa chuyên về chăm sóc và điều trị về vấn đề về răng và miệng. Họ là những chuyên gia có kiến thức vững chắc về cấu trúc và chức năng của răng, nướu và miệng. Đội ngũ bác sĩ nha khoa thường được đào tạo chuyên sâu và có kinh nghiệm trong các phương pháp điều trị như tẩy trắng răng, cạo vôi, chỉnh hình răng, nhổ răng, và nhiều phương pháp khác để giải quyết các vấn đề về răng và miệng của các bệnh nhân. Mục tiêu chính của bác sĩ nha khoa là đảm bảo sức khỏe và vẻ đẹp của răng và miệng cho bệnh nhân.</p>
+                        <p><h4 style={{ color: "#FFF" }}>Đội ngũ bác sĩ</h4></p>
+                        <p style={{ color: "#FFF" }}>Bác sĩ trong phòng khám nha khoa chuyên về chăm sóc và điều trị về vấn đề về răng và miệng. Họ là những chuyên gia có kiến thức vững chắc về cấu trúc và chức năng của răng, nướu và miệng. Đội ngũ bác sĩ nha khoa thường được đào tạo chuyên sâu và có kinh nghiệm trong các phương pháp điều trị như tẩy trắng răng, cạo vôi, chỉnh hình răng, nhổ răng, và nhiều phương pháp khác để giải quyết các vấn đề về răng và miệng của các bệnh nhân. Mục tiêu chính của bác sĩ nha khoa là đảm bảo sức khỏe và vẻ đẹp của răng và miệng cho bệnh nhân.</p>
                     </div>
                 </div>
             </section>
@@ -89,7 +89,7 @@ const DoctorsPage = (props) => {
                 <div className="row" ref={pageToRef}>
                     {currentDoctorList.map((item, index) => {
                         return (
-                            <div className="col-sm-6 col-md-3 p-4"  style={{color: "#FFF" }}>
+                            <div className="col-sm-6 col-md-3 p-4" style={{ color: "#FFF" }}>
                                 <img src={item.image} alt="" style={{ width: "100%" }} />
                                 <p className="mt-3">
                                     {item.fullName}<br />

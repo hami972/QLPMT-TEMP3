@@ -315,12 +315,14 @@ iframe {
   height: 100%;
   min-width: 0px;
 }
+
 .banner_wrap {
   width: 1024px;
   margin: auto;
   height: 100%;
-  
+
 }
+
 .banner_left {
   float: left;
   margin-left: 0px;
@@ -328,9 +330,11 @@ iframe {
   height: 100%;
   background-color: #FF8BD2;
 }
-.imgbanner{
-  width: 280px;
+
+.imgbanner {
+  width: 278px;
 }
+
 .banner_right {
   float: right;
   margin-right: -490px;
@@ -338,19 +342,25 @@ iframe {
   margin-top: -10px;
   background-color: #FF8BD2;
 }
+
 .content2 {
   width: 100%;
   max-width: 956px;
   min-height: 2000px;
-  margin:  0 auto 10px auto;
+  margin: 0 auto;
   position: relative;
 }
+
 .footer {
-  background-image: linear-gradient(#8298FF, #FF8BD2);
+  background-color: #161b22;
 }
-.headdd {
-  background-image: linear-gradient(#FF8BD2,black);
+
+.headerTopNav {
+  background-color: #161b22 !important;
 }
+
 .icon1 {
-  color: #8298FF;
+  background-image: linear-gradient(to bottom right, #489BFF 0%, #A978F9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

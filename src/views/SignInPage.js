@@ -10,7 +10,7 @@ const SignInPage = (props) => {
     const [pass, setPass] = useState('')
     const [userInfo, setUserInfo] = useState(null)
     const [flag, setFlag] = useState(false)
-    const { login, user } = useContext(AuthContext);
+    const { Login, user } = useContext(AuthContext);
     const history = useHistory();
 
 
@@ -25,7 +25,7 @@ const SignInPage = (props) => {
         //    else{
         //     alert('Sign in unsuccessfully')
         //    }
-        login(name, pass, history)
+        Login(name, pass, history)
         // if(user!=null){
         //     console.log('redirect'+redirectTo)
         //     history.push(redirectTo);
@@ -34,7 +34,7 @@ const SignInPage = (props) => {
     }
 
     return (
-        <div style={{backgroundColor: '#000', color: '#fff'}}>
+        <div style={{ backgroundColor: '#000', color: '#fff' }}>
             <TopNav />
             <section className="row g-0">
                 <div className="col-1"></div>
@@ -58,7 +58,7 @@ const SignInPage = (props) => {
                 </div>
                 <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
             </section >
-            <section className="mt-5" style={{backgroundColor: '#8298FF', color: '#fff'}}>
+            <section className="mt-5" style={{ backgroundColor: '#8298FF', color: '#fff' }}>
                 <div className="container">
                     <div className="row g-0">
                         <div className="col-md-6 pt-5 pb-5">

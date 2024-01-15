@@ -19,83 +19,11 @@ const Manager = (props) => {
   const { pathname } = useLocation();
   const { scopeQL } = useContext(AuthContext);
   return (
-    <div style={{backgroundColor: 'black'}} >
+    <div style={{ backgroundColor: 'black' }} >
       <TopNav />
-      <nav className="container-fluid" >
+      <nav className="container" >
         <div className="row flex-nowrap" >
-          <div className="col-auto " id="slide-menu" style={{backgroundColor: '#8298FF'}}>
-            <div className="d-flex flex-column sticky-top" id="stickyTop" style={{ minHeight: "350px" ,backgroundColor: '#8298FF'}} >
-              <ul className="nav nav-pills d-flex flex-column mt-2" id="menu" >
-                {/* <li className="nav-item mt-2 mb-2">
-                                    <NavLink to="/manager/schedule" className="nav-link">
-                                        <img src="/images/qlylichhen_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý lịch hẹn</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/quanlynhanvien" className="nav-link">
-                                        <img src="/images/qlynhanvien_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý nhân viên</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/patient" className="nav-link">
-                                        <img src="/images/quanlybenhnhan_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý bệnh nhân</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/deviceUsed" className="nav-link">
-                                        <img src="/images/ghilaivattuthietbi_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Thiết bị sử dụng</span>
-                                    </NavLink>
-                                </li>
-
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/baocao" className="nav-link">
-                                        <img src="/images/xembaocao_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Báo cáo, thống kê</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/quanlykho" className="nav-link">
-                                        <img src="/images/qlykho_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý kho</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/bill" className="nav-link">
-                                        <img src="/images/qlyhoadon_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý hoá đơn</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/quanlydichvu" className="nav-link">
-                                        <img src="/images/qlydichvu_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý dịch vụ</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/quanlychinhanh" className="nav-link">
-                                        <img src="/images/qlychinhanh_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý chi nhánh</span>
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/quanlymagiamgia" className="nav-link">
-                                        <img src="/images/giamgia_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý mã giảm giá</span>
-                                    </NavLink>
-
-                                </li>
-                                <li className="nav-item mb-2">
-                                    <NavLink to="/manager/quanlydanhgia" className="nav-link">
-                                        <img src="/images/tiepnhandanhgia_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý đánh giá</span>
-                                    </NavLink>
-                                </li> */}
-                {scopeQL?.map((val, idx) => {
-                  return (
-                    <li className="nav-item mb-2" style={{backgroundColor: '#8298FF'}}>
-                      <NavLink to={val.path} className="nav-link" >
-                        <img src={val.srcImg} alt="" /> <span className="ms-1 d-none d-sm-inline">{val.name}</span>
-                      </NavLink>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
-          <div className="col py-3" style={{ overflowX: "auto" }}>
+          <div className="col py-3" style={{ overflowX: "auto", minHeight: "350px" }}>
             <Route>
               <Switch />
               <Route path="/manager/schedule">

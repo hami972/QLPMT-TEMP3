@@ -66,7 +66,7 @@ const Footer = (props) => {
                                 <textarea rows="4" className="mb-4" required value={text}
                                     onChange={(e) => { setText(e.target.value) }}></textarea>
 
-                                <button className="btn footer" 
+                                <button className="btn btnGradient"
                                     onClick={(e) => onSubmit(e)}>Gửi</button>
                             </form>
                         </div>
