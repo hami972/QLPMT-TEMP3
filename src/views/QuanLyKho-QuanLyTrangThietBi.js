@@ -103,8 +103,8 @@ const QuanLyTrangThietBi = (props) => {
     }
   }
   return (
-    <div>
-      <div>
+    <div >
+      <div style={{color: '#fff'}}>
         <div className='row'>
           <div className='col-lg-4 col-md-6'>
             <input
@@ -273,7 +273,7 @@ const QuanLyTrangThietBi = (props) => {
       <button
         type="submit"
         className="btn pb-2 pt-2 mb-3 me-3 mt-3"
-        style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+        style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
         onClick={onSearch}
       >
         Tìm kiếm
@@ -281,7 +281,7 @@ const QuanLyTrangThietBi = (props) => {
       <button
         onClick={() => setModalOpen(true)}
         className="btn pb-2 pt-2 mb-3 me-3 mt-3"
-        style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+        style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
       >
         Thêm
       </button>
@@ -303,7 +303,7 @@ const QuanLyTrangThietBi = (props) => {
         </thead>
         {materials.map((row, idx) => {
           return (
-            <tr key={row.Id}>
+            <tr key={row.Id} style={{backgroundColor: 'white'}}>
               <td>{row.maVatTu}</td>
               <td>{row.tenVatTu}</td>
               <td>{row.soLuongNhap}</td>

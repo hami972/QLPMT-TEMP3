@@ -16,11 +16,11 @@ const BaoCao = (props) => {
     <div>
       <div className="container mt-3">
         <p>
-          <b>Xem báo cáo theo:</b>
+          <b style={{color: '#fff'}}>Xem báo cáo theo:</b>
         </p>
-        <ul className="nav nav-tabs maintab">
+        <ul className="nav nav-tabs maintab" >
           <li className="nav-item">
-            <NavLink
+            <NavLink style={{color: "white"}}
               className="nav-link"
               to="/manager/baocao/baocaotheothoigian"
             >
@@ -28,18 +28,18 @@ const BaoCao = (props) => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/manager/baocao/baocaotheodichvu">
+            <NavLink className="nav-link" to="/manager/baocao/baocaotheodichvu" style={{color: "white"}}>
               Dịch vụ
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/manager/baocao/baocaotheobacsi">
+            <NavLink className="nav-link" to="/manager/baocao/baocaotheobacsi" style={{color: "white"}}>
               Bác sĩ
             </NavLink>
           </li>
           {user?.Loai === "ChuHeThong" && (
             <li className="nav-item">
-              <NavLink
+              <NavLink style={{color: "white"}}
                 className="nav-link"
                 to="/manager/baocao/baocaotheochinhanh"
               >
@@ -48,7 +48,7 @@ const BaoCao = (props) => {
             </li>
           )}
           <li className="nav-item">
-            <NavLink
+            <NavLink style={{color: "white"}}
               className="nav-link"
               to="/manager/baocao/baocaotheochiphiphongkham"
             >

@@ -65,7 +65,7 @@ const QuanLyMaGiamGia = (props) => {
 
   return (
     <div>
-      <div className="row">
+      <div className="row" style={{color: '#fff'}}>
         <div className="col-lg-4 col-md-6">
           <div className="mb-2"><b>ID mã giảm giá</b></div>
           <input
@@ -101,13 +101,13 @@ const QuanLyMaGiamGia = (props) => {
           <button
             onClick={onSearch}
             className="btn pb-2 pt-2 mt-3 mb-3 me-3"
-            style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}>
+            style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}>
             Tìm kiếm
           </button>
           <button
             onClick={() => setModalOpen(true)}
             className="btn pb-2 pt-2 mt-3 mb-3"
-            style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}>
+            style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}>
             Thêm
           </button>
         </div>

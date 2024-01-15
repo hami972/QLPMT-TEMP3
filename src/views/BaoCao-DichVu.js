@@ -10,10 +10,10 @@ const XemBaoCaoTheoDichVu = (props) => {
     <div>
       <ul className="nav subtab">
         <li className="nav-item">
-          <NavLink className="nav-link action" to="/manager/baocao/baocaotheodichvu/xemtheothang">Xem theo tháng</NavLink>
+          <NavLink style={{color: "white"}} className="nav-link action" to="/manager/baocao/baocaotheodichvu/xemtheothang">Xem theo tháng</NavLink>
         </li>
         <li className="nav-item action">
-          <NavLink className="nav-link " to="/manager/baocao/baocaotheodichvu/xemtheonam">Xem theo năm</NavLink>
+          <NavLink style={{color: "white"}} className="nav-link " to="/manager/baocao/baocaotheodichvu/xemtheonam">Xem theo năm</NavLink>
         </li>
       </ul>
       <div className="container mt-3">

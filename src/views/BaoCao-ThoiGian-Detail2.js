@@ -180,7 +180,7 @@ const XemBaoCaoTheoNam = (props) => {
             <button
               type="submit"
               className="btn pb-2 pt-2 mb-3"
-              style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
               onClick={updateTable}
             >
               Xem

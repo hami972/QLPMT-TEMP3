@@ -79,12 +79,12 @@ const BookingPage = (props) => {
     }
   };
   return (
-    <div>
+    <div style={{backgroundColor: '#000'}} >
       <TopNav />
-      <section className="row g-0">
+      <section className="row g-0" >
         <div className="col-1"></div>
         <div className="col-sm-6 col-md-5 col-lg-4">
-          <div
+          <div  className="footer"
             style={{
               border: "2px solid grey",
               borderRadius: "5px",
@@ -93,7 +93,7 @@ const BookingPage = (props) => {
             }}
             align="center"
           >
-            <form>
+            <form style={{color: '#fff'}}>
               <h4 align="center" className="mt-5 mb-4">
                 Đặt lịch hẹn
               </h4>
@@ -189,7 +189,7 @@ const BookingPage = (props) => {
               <button
                 type="submit"
                 className="btn col-10 pb-3 pt-3 mb-5"
-                style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
                 onClick={handleSubmit}
               >
                 Gửi lịch hẹn
@@ -200,13 +200,13 @@ const BookingPage = (props) => {
         <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block">
           <img
             alt=""
-            src="/images/kham5.png"
+            src="/images/phongkham.png"
             style={{ width: "90%" }}
             align="right"
           />
         </div>
       </section>
-      <section className="mt-5" style={{ backgroundColor: "#F0F6FB" }}>
+      <section className="mt-5" style={{backgroundColor: '#8298FF', color: '#fff'}}>
         <div className="container">
           <div className="row g-0">
             <div className="col-md-6 pt-5 pb-5">

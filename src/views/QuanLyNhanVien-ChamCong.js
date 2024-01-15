@@ -182,8 +182,8 @@ const ChamCong = () => {
     }
   };
   return (
-    <div>
-      <div className="row">
+    <div >
+      <div className="row" style={{color: '#fff'}}> 
         <div className="col-md-4">
           <div className="mb-2"><b>Ngày</b></div>
           <input
@@ -220,7 +220,7 @@ const ChamCong = () => {
             <button
               type="submit"
               className="btn pb-2 pt-2"
-              style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
               onClick={onSee}
             >
               Xem
@@ -238,7 +238,7 @@ const ChamCong = () => {
         </thead>
         {table.map((row, idx) => {
           return (
-            <tr>
+            <tr style={{backgroundColor: '#fff'}}>
               <td>{row.MaNV}</td>
               <td>{row.TenNV}</td>
               <td>

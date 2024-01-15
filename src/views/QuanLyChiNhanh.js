@@ -71,8 +71,8 @@ const QuanLyChiNhanh = (props) => {
         setBranchs(searchResults);
     }
     return (
-        <div>
-            <div className='row'>
+        <div >
+            <div className='row' style={{color: '#fff'}}>
                 <div className='col-lg-4 col-md-6'>
                     <input className="form-control pb-2 pt-2 mb-3" type="text" id="maChiNhanh" placeholder="Nhập mã chi nhánh" name="maChiNhanh"
                         onChange={handleChange} />
@@ -82,7 +82,7 @@ const QuanLyChiNhanh = (props) => {
                         onChange={handleChange} />
                 </div>
             </div>
-            <div className='col-auto row align-items-center'>
+            <div className='col-auto row align-items-center' style={{color: '#fff'}}>
                 <div className='col-auto mt-2' style={{ fontWeight: "bold" }}>Số lượng phòng: </div>
                 <div className='col-auto row'>
                     <div className='col-auto row align-items-center gs-1'>
@@ -99,13 +99,13 @@ const QuanLyChiNhanh = (props) => {
             </div>
             <button type="submit"
                 className="btn pb-2 pt-2 me-3 mt-3 mb-3"
-                style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
                 onClick={onSearch}>
                 Tìm kiếm
             </button>
             <button onClick={() => setModalOpen(true)}
                 className="btn pb-2 pt-2 me-3 mt-3 mb-3"
-                style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}>
+                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}>
                 Thêm
             </button>
             <div className="text-end">
@@ -123,7 +123,7 @@ const QuanLyChiNhanh = (props) => {
                 </thead>
                 {branchs.map((row, idx) => {
                     return (
-                        <tr key={row.Id}>
+                        <tr key={row.Id} style={{backgroundColor: '#fff'}}>
                             <td>{row.maChiNhanh}</td>
                             <td>{row.tenChiNhanh}</td>
                             <td>{row.diaChi}</td>

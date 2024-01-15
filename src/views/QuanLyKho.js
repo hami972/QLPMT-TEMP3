@@ -11,10 +11,10 @@ const QuanLyKho = (props) => {
       <div className="container mt-3">
         <ul className="nav nav-tabs maintab">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/manager/quanlykho/trangthietbi">Quản lý trang thiết bị</NavLink>
+            <NavLink style={{color: "white"}} className="nav-link" to="/manager/quanlykho/trangthietbi">Quản lý trang thiết bị</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/manager/quanlykho/thuoc">Quản lý thuốc</NavLink>
+            <NavLink style={{color: "white"}} className="nav-link" to="/manager/quanlykho/thuoc">Quản lý thuốc</NavLink>
           </li>
         </ul>
       </div>

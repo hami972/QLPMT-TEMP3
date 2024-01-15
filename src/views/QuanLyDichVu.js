@@ -68,7 +68,7 @@ const QuanLyDichVu = (props) => {
     }
     return (
         <div>
-            <div className="row">
+            <div className="row" style={{color: '#fff'}}>
                 <div className='col-lg-4 col-md-6'>
                     <input className="form-control pb-2 pt-2 mb-3" type="text" id="maDichVu" placeholder="Nhập mã dịch vụ" name="maDichVu" value={searchCriteria.maDichVu}
                         onChange={handleChange} />
@@ -82,7 +82,7 @@ const QuanLyDichVu = (props) => {
                         onChange={handleChange} />
                 </div>
             </div>
-            <div className='row align-items-center'>
+            <div className='row align-items-center' style={{color: '#fff'}}>
                 <div className='col-auto mt-2' style={{ fontWeight: "bold" }}>Đơn giá: </div>
                 <div className='col-auto row'>
                     <div className='col-auto row align-items-center gs-1'>
@@ -104,13 +104,13 @@ const QuanLyDichVu = (props) => {
             <button
                 onClick={onSearch}
                 className="btn pb-2 pt-2 me-3 mt-3 mb-3"
-                style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
             >
                 Tìm kiếm
             </button>
             <button onClick={() => setModalOpen(true)}
                 className="btn pb-2 pt-2 mt-3 mb-3"
-                style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}>
+                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}>
                 Thêm
             </button>
             <div className="text-end">
@@ -131,7 +131,7 @@ const QuanLyDichVu = (props) => {
                 {services.map((row, idx) => {
 
                     return (
-                        <tr key={row.Id}>
+                        <tr key={row.Id} style={{backgroundColor: '#fff'}}>
                             <td>{row.maDichVu}</td>
                             <td>{row.tenDichVu}</td>
                             <td>{row.loaiDichVu}</td>

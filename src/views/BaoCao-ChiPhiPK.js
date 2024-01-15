@@ -10,10 +10,10 @@ const XemBaoCaoTheoCPPK = (props) => {
     <div>
       <ul className="nav subtab">
         <li className="nav-item">
-          <NavLink className="nav-link " to="/manager/baocao/baocaotheochiphiphongkham/xemtheothang">Xem theo tháng</NavLink>
+          <NavLink style={{color: "white"}} className="nav-link " to="/manager/baocao/baocaotheochiphiphongkham/xemtheothang">Xem theo tháng</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link action" to="/manager/baocao/baocaotheochiphiphongkham/xemtheonam">Xem theo năm</NavLink>
+          <NavLink style={{color: "white"}} className="nav-link action" to="/manager/baocao/baocaotheochiphiphongkham/xemtheonam">Xem theo năm</NavLink>
         </li>
       </ul>
       <div className="container mt-3">

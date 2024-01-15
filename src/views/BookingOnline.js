@@ -200,7 +200,7 @@ const BookingOnline = () => {
               style={{
                 border: "2px solid grey",
                 borderRadius: "5px",
-                boxShadow: "3px 3px #888888",
+                boxShadow: "3px 3px #8298FF",
               }}
             >
               <div className="col-lg-6 mt-2">

@@ -89,8 +89,8 @@ const LuongThuong = () => {
   };
 
   return (
-    <div>
-      <div className="row align-items-center">
+    <div >
+      <div className="row align-items-center" style={{color: '#fff'}}>
         <div className="col-auto mb-3"><b>Áp dụng: </b></div>
         <div className="col-lg-5 col-md-7 me-3 mb-3">
           <select
@@ -129,7 +129,7 @@ const LuongThuong = () => {
           <button
             type="submit"
             className="btn pb-2 pt-2"
-            style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+            style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
             onClick={() => setModalOpen(true)}
           >
             Thêm

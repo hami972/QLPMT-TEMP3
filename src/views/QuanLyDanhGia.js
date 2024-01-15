@@ -39,7 +39,7 @@ const QuanLyDanhGia = (props) => {
                     </tr>
                 </thead>
                 {feedbacks.map((item, index) => (
-                    <tr key={item.index}>
+                    <tr key={item.index} style={{backgroundColor: '#fff'}}>
                         <td className='pe-3'>{moment(new Date(item.ngay)).format("DD/MM/YYYY")}</td>
                         <td className='pe-3'>{item.gio}</td>
                         <td>{item.noidung}</td>

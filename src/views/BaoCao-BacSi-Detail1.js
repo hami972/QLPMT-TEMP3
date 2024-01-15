@@ -111,7 +111,7 @@ const XemBaoCaoNhaSiTheoThang = (props) => {
   };
 
   return (
-    <div>
+    <div style={{color: '#fff'}}>
       <div className="row">
         <div className="col-lg-5 col-md-8">
           <div className="mb-2">
@@ -151,7 +151,7 @@ const XemBaoCaoNhaSiTheoThang = (props) => {
           <div className="text-end">
             <button
               className="btn pb-2 pt-2 mb-3"
-              style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
               onClick={updateTable}
             >
               Xem

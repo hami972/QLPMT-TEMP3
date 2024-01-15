@@ -71,12 +71,12 @@ const ServicesPage = (props) => {
     }
 
     return (
-        <div>
+        <div style={{backgroundColor: 'black'}}>
             <TopNav />
-            <header className="pt-4 pb-4" style={{ backgroundColor: "#0096FF", color: "#FFF" }}><h3 align="center">Dịch vụ</h3></header>
+            <header className="pt-4 pb-4 footer" style={{color: "#FFF" }}><h3 align="center">Dịch vụ</h3></header>
 
             <section className="container mt-5 mb-5">
-                <div className="row" ref={pageToRef}>
+                <div className="row" ref={pageToRef}  style={{color: "#FFF" }}>
                     {currentDoctorList.map((item, index) => {
                         return (
                             <div className="row">
@@ -86,7 +86,7 @@ const ServicesPage = (props) => {
                                 <div className="col-md-8 align-self-center px-3">
                                     <p style={{ fontSize: "26px" }}>{item.name}</p>
                                     <p><h6>{item.price}</h6></p>
-                                    <p style={{ color: "#666" }} className='mb-5'>{item.description}</p>
+                                    <p style={{ color: "#fff" }} className='mb-5'>{item.description}</p>
                                 </div>
                             </div>
                         )

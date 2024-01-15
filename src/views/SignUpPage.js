@@ -91,12 +91,12 @@ const SignUpPage = (props) => {
 
     }
     return (
-        <div>
+        <div style={{backgroundColor: '#000', color: '#fff'}}>
             <TopNav />
             <section className="row g-0">
                 <div className="col-1"></div>
-                <div className="col-sm-6 col-md-5 col-lg-4">
-                    <div style={{ border: "2px solid grey", borderRadius: "5px", boxShadow: "3px 3px #888888", marginTop: "70px" }} align="center">
+                <div className="col-sm-6 col-md-5 col-lg-4" >
+                    <div style={{ border: "2px solid grey", borderRadius: "5px", boxShadow: "3px 3px #888888", marginTop: "70px" }} className='footer' align="center">
                         <form>
                             <h4 align="center" className="mt-5 mb-4">Đăng ký</h4>
                             <div className="mb-3 mt-3 col-10">
@@ -130,17 +130,17 @@ const SignUpPage = (props) => {
                                 <input type="password" className="form-control pb-3 pt-3" id="re-enter_password" name="re-enter_password" placeholder="Nhập lại mật khẩu" required onChange={(e) => setAgainPass(e.target.value)} value={againPass} />
                             </div>
 
-                            <NavLink to="/sign_in" className="btn d-flex justify-content-center col-10 mb-2 mt-2" style={{ color: "#0096FF" }}>Đăng nhập nếu bạn đã có tài khoản</NavLink>
+                            <NavLink to="/sign_in" className="btn d-flex justify-content-center col-10 mb-2 mt-2" style={{ color: "#fff" }}>Đăng nhập nếu bạn đã có tài khoản</NavLink>
                             {errors && <div className="error">{errors}</div>}
-                            <button type="submit" className="btn col-10 pb-3 pt-3 mb-5" style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }} onClick={(e) => { handleSignup(e) }}>Đăng ký</button>
+                            <button type="submit" className="btn col-10 pb-3 pt-3 mb-5" style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }} onClick={(e) => { handleSignup(e) }}>Đăng ký</button>
 
 
                         </form>
                     </div>
                 </div>
-                <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/kham5.png" style={{ width: "90%" }} align="right" /></div>
+                <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
             </section >
-            <section className="mt-5" style={{ backgroundColor: "#F0F6FB" }}>
+            <section className="mt-5" style={{backgroundColor: '#8298FF', color: '#fff'}}>
                 <div className="container">
                     <div className="row g-0">
                         <div className="col-md-6 pt-5 pb-5">

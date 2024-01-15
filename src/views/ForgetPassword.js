@@ -16,12 +16,12 @@ const ForgetPassword = (props) => {
         forgotPassword(email)
     }
     return (
-        <div>
+        <div style={{backgroundColor: '#000'}} >
             <TopNav />
             <section className="row g-0">
-                <div className="col-1"></div>
+                <div className="col-1" ></div>
                 <div className="col-sm-6 col-md-5 col-lg-4">
-                    <div style={{ border: "2px solid grey", borderRadius: "5px", boxShadow: "3px 3px #888888", marginTop: "70px" }} align="center">
+                    <div className="footer" style={{ border: "2px solid grey", borderRadius: "5px", boxShadow: "3px 3px #888888", marginTop: "70px" }} align="center">
                         <form>
                             <h4 align="center" className="mt-5 mb-4">Quên mật khẩu</h4>
                             <div className="mb-3 mt-3 col-10">
@@ -30,7 +30,7 @@ const ForgetPassword = (props) => {
 
                             <NavLink to="/sign_in" className="text-decoration-none d-flex justify-content-end col-10" style={{ fontWeight: "600", color: "black" }}>Quay về trang đăng nhập</NavLink>
                             <br></br>
-                            <button type="submit" className="btn col-10 pb-3 pt-3" onClick={(e) => { handleForgot(e) }} style={{ backgroundColor: "#0096FF", color: "#FFFFFF", marginBottom: "300px" }} >Gửi</button>
+                            <button type="submit" className="btn col-10 pb-3 pt-3" onClick={(e) => { handleForgot(e) }} style={{ backgroundColor: "#8298FF", color: "#FFFFFF", marginBottom: "300px" }} >Gửi</button>
                             {codePopup && (
                                 <CodeGetPass trigger="true">
                                     <div className="mb-3 mt-3 col-10">

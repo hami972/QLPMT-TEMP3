@@ -154,8 +154,8 @@ const XemThongTinNhanVien = (props) => {
     setStaffs(searchResults);
   };
   return (
-    <div>
-      <div className="row">
+    <div >
+      <div className="row" style={{color: '#fff'}}>
         <div className="col-lg-4 col-md-6">
           <div className="mb-2"><b>Mã nhân viên</b></div>
           <input
@@ -243,7 +243,7 @@ const XemThongTinNhanVien = (props) => {
         <button
           type="submit"
           className="btn pb-2 pt-2 mb-3 me-3"
-          style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+          style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
           onClick={onSearch}
         >
           Tìm kiếm
@@ -251,7 +251,7 @@ const XemThongTinNhanVien = (props) => {
         <button
           onClick={() => setModalOpen(true)}
           className="btn pb-2 pt-2 mb-3"
-          style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+          style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
         >
           Thêm
         </button>
@@ -276,7 +276,7 @@ const XemThongTinNhanVien = (props) => {
         </thead>
         {staffs.map((row, idx) => {
           return (
-            <tr key={row.Id}>
+            <tr key={row.Id} style={{backgroundColor: '#fff'}}>
               <td>{row.maNhanVien}</td>
               <td>{row.tenNhanVien}</td>
               <td>{row.soDienThoai}</td>

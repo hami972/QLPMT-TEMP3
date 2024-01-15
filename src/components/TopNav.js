@@ -8,11 +8,11 @@ const TopNav = () => {
     logout()
   }
   return (
-    <nav className="navbar navbar-expand-md bg-light navbar-light">
-      <div className="container" id="topNav">
+    <nav className="navbar navbar-expand-md bg-light navbar-light headdd" >
+      <div className="container"  id="topNav" >
         <div>
           <img
-            src="/images/logo1.png"
+            src="/images/logo2.png"
             alt="Avatar Logo"
             style={{ minWidth: "100%" }}
           />
@@ -21,7 +21,7 @@ const TopNav = () => {
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
+          data-bs-target="#collapsibleNavbar" 
         >
           Menu
           <i className="fa-solid fa-caret-down"></i>
@@ -98,7 +98,7 @@ const TopNav = () => {
                 </button>
                 <ul
                   className="dropdown-menu dropdown-menu-dark text-small shadow"
-                  style={{ backgroundColor: "#007cd4" }}
+                  style={{ backgroundColor: "#FF8BD2" }}
                   aria-labelledby="dropdownUser1"
                 >
                   <li>

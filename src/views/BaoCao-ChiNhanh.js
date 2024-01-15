@@ -10,7 +10,7 @@ const XemBaoCaoTheoChiNhanh = (props) => {
     <div>
       <ul className="nav subtab">
         <li className="nav-item">
-          <NavLink
+          <NavLink style={{color: "white"}}
             className="nav-link "
             to="/manager/baocao/baocaotheochinhanh/xemtheothang"
           >
@@ -18,7 +18,7 @@ const XemBaoCaoTheoChiNhanh = (props) => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink
+          <NavLink style={{color: "white"}}
             className="nav-link action"
             to="/manager/baocao/baocaotheochinhanh/xemtheonam"
           >

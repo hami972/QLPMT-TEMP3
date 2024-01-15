@@ -34,12 +34,12 @@ const SignInPage = (props) => {
     }
 
     return (
-        <div>
+        <div style={{backgroundColor: '#000', color: '#fff'}}>
             <TopNav />
             <section className="row g-0">
                 <div className="col-1"></div>
-                <div className="col-sm-6 col-md-5 col-lg-4">
-                    <div style={{ border: "2px solid grey", borderRadius: "5px", boxShadow: "3px 3px #888888", marginTop: "70px" }} align="center">
+                <div className="col-sm-6 col-md-5 col-lg-4 " >
+                    <div style={{ border: "2px solid grey", borderRadius: "5px", boxShadow: "3px 3px #888888", marginTop: "70px" }} align="center" className='footer'>
                         <form>
                             <h4 align="center" className="mt-5 mb-4">Đăng nhập</h4>
                             <div className="mb-3 mt-3 col-10">
@@ -50,15 +50,15 @@ const SignInPage = (props) => {
                             </div>
                             <NavLink to="/forgetpassword" className="text-decoration-none d-flex justify-content-end col-10" style={{ fontWeight: "600", color: "black" }}>Bạn quên mật khẩu?</NavLink>
 
-                            <NavLink to="/sign_up" className="btn d-flex justify-content-center col-10 mb-2 mt-2" style={{ color: "#0096FF" }}>Nếu bạn chưa có tài khoản, đăng ký ngay!</NavLink>
+                            <NavLink to="/sign_up" className="btn d-flex justify-content-center col-10 mb-2 mt-2" style={{ color: "#fff" }}>Nếu bạn chưa có tài khoản, đăng ký ngay!</NavLink>
 
-                            {<button type="submit" className="btn col-10 pb-3 pt-3" style={{ backgroundColor: "#0096FF", color: "#FFFFFF", marginBottom: "300px" }} onClick={handleSignin}>Đăng nhập</button>}
+                            {<button type="submit" className="btn col-10 pb-3 pt-3" style={{ backgroundColor: "#8298FF", color: "#FFFFFF", marginBottom: "300px" }} onClick={handleSignin}>Đăng nhập</button>}
                         </form>
                     </div>
                 </div>
-                <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/kham5.png" style={{ width: "90%" }} align="right" /></div>
+                <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
             </section >
-            <section className="mt-5" style={{ backgroundColor: "#F0F6FB" }}>
+            <section className="mt-5" style={{backgroundColor: '#8298FF', color: '#fff'}}>
                 <div className="container">
                     <div className="row g-0">
                         <div className="col-md-6 pt-5 pb-5">

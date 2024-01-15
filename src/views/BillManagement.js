@@ -227,15 +227,19 @@ const BillManagement = (props) => {
         } else {
           newBill.daThanhToan = ThanhTienSauGiamGia;
           const thanhtoan = {
-            ngayThanhToan: new Date(
-              new Date().getFullYear(),
-              new Date().getMonth() + 1,
-              new Date().getDay()
-            )
-              .toISOString()
-              .slice(0, 10),
+            // ngayThanhToan: new Date(
+            //   new Date().getFullYear(),
+            //   new Date().getMonth() + 1,
+            //   new Date().getDay()
+            // )
+            //   .toISOString()
+            //   .slice(0, 10),
+            ngayThanhToan: moment().format("YYYY-MM-DD"),
             tienThanhToan: ThanhTienSauGiamGia,
           };
+
+          console.log(thanhtoan.ngayThanhToan + ' 2')
+
           let dsThanhToan = newBill.dsThanhToan;
           if (
             dsThanhToan == undefined ||

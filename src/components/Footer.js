@@ -23,7 +23,7 @@ const Footer = (props) => {
     }
 
     return (
-        <footer style={{ backgroundColor: "#0096FF", color: "white", marginTop: "80px", ...style }}>
+        <footer className="footer" style={{ color: "white", marginTop: "80px", ...style }}>
             <div className="container pt-4 pb-5">
                 <div className="row">
                     <div className="col-md-3">
@@ -66,7 +66,7 @@ const Footer = (props) => {
                                 <textarea rows="4" className="mb-4" required value={text}
                                     onChange={(e) => { setText(e.target.value) }}></textarea>
 
-                                <button className="btn btn-primary"
+                                <button className="btn footer" 
                                     onClick={(e) => onSubmit(e)}>Gửi</button>
                             </form>
                         </div>

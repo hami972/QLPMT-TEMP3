@@ -134,13 +134,13 @@ const ContactPage = (props) => {
 
 
     return (
-        <div>
+        <div style={{backgroundColor: "black"}}>
             <TopNav />
-            <header className="pt-4 pb-4" style={{ backgroundColor: "#0096FF", color: "#FFF" }}><h3 align="center">Liên lạc</h3></header>
+            <header className="pt-4 pb-4 footer" style={{color: "#FFF" }}><h3 align="center">Liên lạc</h3></header>
             <section className="container mt-5">
                 <div className="row">
                     <div className="col-md-3"></div>
-                    <div className="col-md-6">
+                    <div className="col-md-6" >
                         <img alt="" src="images/phongkham.png" style={{ width: "100%" }} />
                     </div>
                     <div className="col-md-3"></div>
@@ -149,25 +149,25 @@ const ContactPage = (props) => {
             <section className="container mb-5">
                 <div className="mt-4">
 
-                    <div className="row">
+                    <div className="row"  style={{color: "#FFF" }}>
                         {braches.map((item, index) => {
                             return (
                                 <div className="mt-4">
                                     <h3 align="center">{item.TenCN}</h3>
                                     <div className="row">
                                         <div className="col-md-4 text-center mt-2">
-                                            <i className="fa-solid fa-location-dot" style={{ color: "#0096FF", fontSize: "25px" }}></i>
+                                            <i className="fa-solid fa-location-dot icon1" style={{ fontSize: "25px" }}></i>
                                             <p><h4>Địa chỉ</h4></p>
                                             {item.DiaChi}
                                         </div>
                                         <div className="col-md-4 text-center mt-2">
-                                            <i className="fa-solid fa-phone-volume" style={{ color: "#0096FF", fontSize: "25px" }}></i>
+                                            <i className="fa-solid fa-phone-volume icon1" style={{ fontSize: "25px" }}></i>
                                             <p><h4>Liên lạc</h4></p>
                                             {item.Email}<br />
                                             Phone : {item.SDT}
                                         </div>
                                         <div className="col-md-4 text-center mt-2">
-                                            <i className="fa-regular fa-clock" style={{ color: "#0096FF", fontSize: "25px" }}></i>
+                                            <i className="fa-regular fa-clock icon1" style={{ fontSize: "25px" }}></i>
                                             <p><h4>Giờ mở cửa</h4></p>
                                             Thứ 2 - Thứ 7: 09:00 – 20:00<br />
                                             Chủ nhật: 10:30 – 22:00
@@ -180,14 +180,14 @@ const ContactPage = (props) => {
                 </div>
             </section >
             <section className='container'>
-                <h3 align="center">Phản hồi của khách hàng</h3>
-                <p className='text-center'>Cảm ơn bạn đã tin tưởng chúng tôi</p>
+                <h3 align="center"  style={{color: "#FFF" }}>Phản hồi của khách hàng</h3>
+                <p className='text-center'  style={{color: "#FFF" }}>Cảm ơn bạn đã tin tưởng chúng tôi</p>
                 <div className="container-fluid mt-4" align="center">
                     <Slider {...settings}>
                         {reviewList.map((item, index) => {
                             return (
                                 <div className="container mb-2" >
-                                    <div className="p-4">
+                                    <div className="p-4"  style={{color: "#FFF" }}>
                                         <div className="custom-slider-item pt-5 pb-5 pe-3 px-3 mb-4" >
                                             <p className="truncation-text">{item.review}</p>
                                         </div>

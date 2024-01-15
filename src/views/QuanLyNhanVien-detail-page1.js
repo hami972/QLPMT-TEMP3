@@ -116,9 +116,9 @@ const XemBangLuong = (props) => {
     } else setTable([]);
   };
   return (
-    <div>
+    <div >
       {/* <form name="xemBangLuong" action="/action_page.php"> */}
-      <div class="row">
+      <div class="row" style={{color: '#fff'}}>
         <div className="col-lg-4 col-md-4">
           <div className="mb-2"><b>Chọn tháng, năm</b></div>
           <input
@@ -152,7 +152,7 @@ const XemBangLuong = (props) => {
             <button
               type="submit"
               className="btn pb-2 pt-2"
-              style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
               // class="bluecolor block m-2 bg-0096FF hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
               onClick={calSalary}
             >

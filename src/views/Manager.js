@@ -19,13 +19,13 @@ const Manager = (props) => {
   const { pathname } = useLocation();
   const { scopeQL } = useContext(AuthContext);
   return (
-    <div>
+    <div style={{backgroundColor: 'black'}} >
       <TopNav />
-      <nav className="container-fluid">
-        <div className="row flex-nowrap">
-          <div className="col-auto bg-primary" id="slide-menu">
-            <div className="d-flex flex-column sticky-top" id="stickyTop" style={{ minHeight: "350px" }}>
-              <ul className="nav nav-pills d-flex flex-column mt-2" id="menu">
+      <nav className="container-fluid" >
+        <div className="row flex-nowrap" >
+          <div className="col-auto " id="slide-menu" style={{backgroundColor: '#8298FF'}}>
+            <div className="d-flex flex-column sticky-top" id="stickyTop" style={{ minHeight: "350px" ,backgroundColor: '#8298FF'}} >
+              <ul className="nav nav-pills d-flex flex-column mt-2" id="menu" >
                 {/* <li className="nav-item mt-2 mb-2">
                                     <NavLink to="/manager/schedule" className="nav-link">
                                         <img src="/images/qlylichhen_48px.png" alt="" /> <span className="ms-1 d-none d-sm-inline">Quản lý lịch hẹn</span>
@@ -85,8 +85,8 @@ const Manager = (props) => {
                                 </li> */}
                 {scopeQL?.map((val, idx) => {
                   return (
-                    <li className="nav-item mb-2">
-                      <NavLink to={val.path} className="nav-link">
+                    <li className="nav-item mb-2" style={{backgroundColor: '#8298FF'}}>
+                      <NavLink to={val.path} className="nav-link" >
                         <img src={val.srcImg} alt="" /> <span className="ms-1 d-none d-sm-inline">{val.name}</span>
                       </NavLink>
                     </li>
@@ -140,7 +140,7 @@ const Manager = (props) => {
           </div>
         </div>
       </nav>
-      <footer style={{ backgroundColor: "#0096FF", color: "white" }}>
+      <footer className='footer' style={{ color: "white" }}>
         <div className="container pt-4 pb-5">
           <div className="row">
 

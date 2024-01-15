@@ -1,15 +1,15 @@
 #topNav .nav-link {
-    color: black !important;
+    color: white !important;
     font-weight: bold !important;
     background: none !important;
 }
 
 #topNav .nav-item>.active {
-    color: #0095ff !important;
+    color: #8298FF !important;
 }
 
 #topNav .nav-item>.nav-link:hover {
-    color: #39adff !important;
+    color: #FF8BD2 !important;
 }
 
 .send-area {
@@ -45,7 +45,7 @@
 }
 
 .slick-dots button::before {
-    color: #0096FF !important;
+    color: #8298FF !important;
 }
 
 .custom-slider-item {
@@ -79,13 +79,13 @@
 .slick-prev::before {
 
     font-size: 30px !important;
-    color: #0096FF !important;
+    color: #8298FF !important;
     margin-left: -15px !important;
 }
 
 .slick-next::before {
     font-size: 30px !important;
-    color: #0096FF !important;
+    color: #8298FF !important;
     margin-right: -15px !important;
 }
 
@@ -105,7 +105,7 @@
 
 
 .active>.page-link {
-    background-color: #0096FF !important;
+    background-color: #8298FF !important;
     color: #FFF !important;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .next-and-previous-button {
-    color: #0096FF !important;
+    color: #8298FF !important;
 }
 
 .disabled>.page-link {
@@ -145,16 +145,16 @@ input[type="date"]:not(.has-value):before {
 }
 
 .customLink:active {
-    color: #0096FF !important;
+    color: #8298FF!important;
 }
 
 .customLink:hover {
-    color: #39adff !important;
+    color: #8298FF !important;
 }
 
 .headLine {
     height: 150px;
-    background-color: #0096FF;
+    background-image: linear-gradient(#8298FF, #FF8BD2);
     color: white;
     font-weight: bold;
     text-align: center;
@@ -170,7 +170,7 @@ input[type="date"]:not(.has-value):before {
     width: 248px;
     height: 1189px;
     margin-top: -10px;
-    background-color: #0096FF;
+    background-image: linear-gradient(#8298FF, #FF8BD2);
 }
 
 .navTextFlex {
@@ -232,29 +232,33 @@ input[type="date"]:not(.has-value):before {
 .div-test {
     background-color: fuchsia;
 }
-
+.maintab {
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
 .maintab .nav-item>.active {
-    background-color: #0096FF !important;
+    background-color: #8298FF !important;
     color: white !important;
     font-size: 16px !important;
     font-weight: bold !important;
 }
 
 .maintab .nav-item>.nav-link:hover {
-    background-color: #39adff !important;
+    background-color: #FF8BD2 !important;
     color: white !important;
     font-size: 16px !important;
     font-weight: bold !important;
 }
 
 .subtab .nav-item>.active {
-    background-color: #0096FF !important;
+    background-color: #8298FF !important;
     color: white !important;
     font-weight: bold !important;
 }
 
 .subtab .nav-item>.nav-link:hover {
-    background-color: #39adff !important;
+    background-color: #FF8BD2 !important;
     color: white !important;
     font-weight: bold !important;
 }
@@ -278,7 +282,7 @@ input[type="date"]:not(.has-value):before {
     position: absolute;
     left: 0;
     top: 20px;
-    background-color: #0096FF;
+    background-color: #8298FF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 1;
     border-radius: 10px;
@@ -295,7 +299,7 @@ input[type="date"]:not(.has-value):before {
 }
 
 .btn-wrp {
-    border-bottom: 2px solid #007cd4;
+    border-bottom: 2px solid #8298FF;
     display: inline-block;
     width: 100%;
     position: relative;
@@ -308,7 +312,7 @@ input[type="date"]:not(.has-value):before {
     width: 100%;
     padding: 10px;
     outline: none;
-    color: #007cd4;
+    color: #8298FF;
     font-weight: bold;
 }
 
@@ -447,14 +451,14 @@ input[type=file]::-webkit-file-upload-button {
 
 .next_prevBtn_disabled {
     font-size: 35px;
-    color: #007cd4;
+    color: #8298FF;
     filter: brightness(0.7);
     cursor: not-allowed
 }
 
 .next_prevBtn {
     font-size: 35px;
-    color: #007cd4;
+    color: #8298FF;
 }
 
 .signature {
