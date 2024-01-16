@@ -19,7 +19,7 @@ const Manager = (props) => {
   const { pathname } = useLocation();
   const { scopeQL } = useContext(AuthContext);
   return (
-    <div style={{ backgroundColor: 'black' }} >
+    <div style={{ backgroundColor: '#0D1117' }} >
       <TopNav />
       <nav className="container" >
         <div className="row flex-nowrap" >

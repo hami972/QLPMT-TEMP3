@@ -196,18 +196,18 @@ export const FormLuongThuong = ({
               >
                 {formState.LoaiNhanVien === "Cá nhân"
                   ? branches.map((item, index) => {
-                      if (item.tenChiNhanh !== "Tất cả")
-                        return (
-                          <option key={index} value={item.tenChiNhanh}>
-                            {item.tenChiNhanh}
-                          </option>
-                        );
-                    })
+                    if (item.tenChiNhanh !== "Tất cả")
+                      return (
+                        <option key={index} value={item.tenChiNhanh}>
+                          {item.tenChiNhanh}
+                        </option>
+                      );
+                  })
                   : branches.map((item, index) => (
-                      <option key={index} value={item.tenChiNhanh}>
-                        {item.tenChiNhanh}
-                      </option>
-                    ))}
+                    <option key={index} value={item.tenChiNhanh}>
+                      {item.tenChiNhanh}
+                    </option>
+                  ))}
               </select>
             </div>
           )}
@@ -235,8 +235,7 @@ export const FormLuongThuong = ({
           <div className="text-end">
             <button
               type="submit"
-              className="btn pb-2 pt-2 ps-3 pe-3 mt-2"
-              style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+              className="btn pb-2 pt-2 ps-3 pe-3 mt-2 btnGradient"
               onClick={(e) => handleSubmit(e)}
             >
               Lưu

@@ -30,22 +30,22 @@ const QuanLyDanhGia = (props) => {
                 <option value="asc">Sắp xếp theo cũ nhất</option>
             </select>
 
-            <table className="table">
-                <thead style={{ verticalAlign: "middle" }} className="table-secondary">
+            <table className="table table-dark">
+                <thead style={{ verticalAlign: "middle" }}>
                     <tr>
-                        <th className='pe-3'>Ngày</th>
-                        <th className='pe-3'>Giờ</th>
+                        <th>Ngày</th>
+                        <th>Giờ</th>
                         <th>Nội dung</th>
                     </tr>
                 </thead>
-                {feedbacks.map((item, index) => (
-                    <tr key={item.index} style={{backgroundColor: '#fff'}}>
-                        <td className='pe-3'>{moment(new Date(item.ngay)).format("DD/MM/YYYY")}</td>
-                        <td className='pe-3'>{item.gio}</td>
-                        <td>{item.noidung}</td>
-                    </tr>
-                ))}
                 <tbody>
+                    {feedbacks.map((item, index) => (
+                        <tr key={item.index}>
+                            <td className='pe-3'>{moment(new Date(item.ngay)).format("DD/MM/YYYY")}</td>
+                            <td className='pe-3'>{item.gio}</td>
+                            <td>{item.noidung}</td>
+                        </tr>
+                    ))}
 
                 </tbody>
             </table>

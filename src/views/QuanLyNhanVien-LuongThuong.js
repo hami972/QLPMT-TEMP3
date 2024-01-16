@@ -90,7 +90,7 @@ const LuongThuong = () => {
 
   return (
     <div >
-      <div className="row align-items-center" style={{color: '#fff'}}>
+      <div className="row align-items-center" style={{ color: '#fff' }}>
         <div className="col-auto mb-3"><b>Áp dụng: </b></div>
         <div className="col-lg-5 col-md-7 me-3 mb-3">
           <select
@@ -128,17 +128,16 @@ const LuongThuong = () => {
         <div className="col-auto mb-3">
           <button
             type="submit"
-            className="btn pb-2 pt-2"
-            style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+            className="btn pb-2 pt-2 btnGradient"
             onClick={() => setModalOpen(true)}
           >
             Thêm
           </button>
         </div>
       </div>
-      <table className="table">
+      <table className="table table-dark">
         <thead style={{ verticalAlign: "middle" }}>
-          <tr className="table-secondary">
+          <tr>
             <th>Loại lương thưởng</th>
             <th>Tiền</th>
             <th>Ghi chú</th>

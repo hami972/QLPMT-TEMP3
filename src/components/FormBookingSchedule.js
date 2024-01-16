@@ -194,9 +194,9 @@ export const FormBookingSchedule = ({
             onChange={(value) =>
               value !== null
                 ? setFormState({
-                    ...formState,
-                    DichVu: `${value.tenDichVu} - ${value.loaiDichVu}`,
-                  })
+                  ...formState,
+                  DichVu: `${value.tenDichVu} - ${value.loaiDichVu}`,
+                })
                 : setFormState({ ...formState, DichVu: "" })
             }
             options={services}
@@ -235,8 +235,7 @@ export const FormBookingSchedule = ({
 
               <button
                 type="submit"
-                className="btn pb-2 pt-2 ps-3 pe-3 mt-2"
-                style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+                className="btn pb-2 pt-2 ps-3 pe-3 mt-2 btnGradient"
                 onClick={handleSubmit}
               >
                 Lưu

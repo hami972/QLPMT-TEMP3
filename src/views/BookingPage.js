@@ -79,12 +79,12 @@ const BookingPage = (props) => {
     }
   };
   return (
-    <div style={{backgroundColor: '#000'}} >
+    <div style={{ backgroundColor: '#000' }} >
       <TopNav />
       <section className="row g-0" >
         <div className="col-1"></div>
         <div className="col-sm-6 col-md-5 col-lg-4">
-          <div  className="footer"
+          <div className="footer"
             style={{
               border: "2px solid grey",
               borderRadius: "5px",
@@ -93,7 +93,7 @@ const BookingPage = (props) => {
             }}
             align="center"
           >
-            <form style={{color: '#fff'}}>
+            <form style={{ color: '#fff' }}>
               <h4 align="center" className="mt-5 mb-4">
                 Đặt lịch hẹn
               </h4>
@@ -200,13 +200,13 @@ const BookingPage = (props) => {
         <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block">
           <img
             alt=""
-            src="/images/phongkham.png"
+            src="/images/phongkham.jpg"
             style={{ width: "90%" }}
             align="right"
           />
         </div>
       </section>
-      <section className="mt-5" style={{backgroundColor: '#8298FF', color: '#fff'}}>
+      <section className="mt-5" style={{ backgroundColor: '#8298FF', color: '#fff' }}>
         <div className="container">
           <div className="row g-0">
             <div className="col-md-6 pt-5 pb-5">

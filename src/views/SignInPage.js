@@ -48,21 +48,21 @@ const SignInPage = (props) => {
                             <div className="col-10 mt-3 mb-2">
                                 <input type="password" className="form-control pb-3 pt-3" id="password" name="password" placeholder="Mật khẩu" onInvalid={e => e.target.setCustomValidity('Mời bạn nhập mật khẩu')} onInput={e => e.target.setCustomValidity('')} required onChange={(e) => setPass(e.target.value)} value={pass} />
                             </div>
-                            <NavLink to="/forgetpassword" className="text-decoration-none d-flex justify-content-end col-10" style={{ fontWeight: "600", color: "black" }}>Bạn quên mật khẩu?</NavLink>
+                            <NavLink to="/forgetpassword" className="text-decoration-none d-flex justify-content-end col-10" style={{ fontWeight: "600", color: "#FFF" }}>Bạn quên mật khẩu?</NavLink>
 
                             <NavLink to="/sign_up" className="btn d-flex justify-content-center col-10 mb-2 mt-2" style={{ color: "#fff" }}>Nếu bạn chưa có tài khoản, đăng ký ngay!</NavLink>
 
-                            {<button type="submit" className="btn col-10 pb-3 pt-3" style={{ backgroundColor: "#8298FF", color: "#FFFFFF", marginBottom: "300px" }} onClick={handleSignin}>Đăng nhập</button>}
+                            {<button type="submit" className="btn col-10 pb-3 pt-3 btnGradient" style={{ color: "#FFFFFF", marginBottom: "300px" }} onClick={handleSignin}>Đăng nhập</button>}
                         </form>
                     </div>
                 </div>
-                <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
+                <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/phongkham.jpg" style={{ width: "90%" }} align="right" /></div>
             </section >
-            <section className="mt-5" style={{ backgroundColor: '#8298FF', color: '#fff' }}>
+            <section className="mt-5" style={{ background: 'linear-gradient(to right, #489BFF 0%, #A978F9 80%)', color: '#fff' }}>
                 <div className="container">
                     <div className="row g-0">
                         <div className="col-md-6 pt-5 pb-5">
-                            <p style={{ fontSize: "36px" }}>Phòng khám ABC</p>
+                            <p style={{ fontSize: "36px" }}>Phòng khám LOGOIPSUM</p>
                             <p>Phòng khám nha khoa của chúng tôi đã được thành lập từ năm 2015 và đã phục vụ hàng trăm bệnh nhân trong suốt thời gian này. Chúng tôi tự hào mang lại cho khách hàng sự chăm sóc nha khoa chất lượng và đáng tin cậy</p>
                             <p>Với đội ngũ bác sĩ nha khoa giàu kinh nghiệm và chuyên môn, phòng khám của chúng tôi có thể đáp ứng mọi nhu cầu nha khoa của khách hàng. Chúng tôi cung cấp các dịch vụ từ những khám và tư vấn sức khỏe răng miệng đến điều trị và phục hình nha khoa.</p>
                         </div>

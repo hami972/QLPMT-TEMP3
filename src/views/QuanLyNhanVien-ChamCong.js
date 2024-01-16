@@ -182,8 +182,8 @@ const ChamCong = () => {
     }
   };
   return (
-    <div >
-      <div className="row" style={{color: '#fff'}}> 
+    <div style={{ color: "#FFF" }}>
+      <div className="row">
         <div className="col-md-4">
           <div className="mb-2"><b>Ngày</b></div>
           <input
@@ -219,8 +219,7 @@ const ChamCong = () => {
           <div className="text-end mt-3">
             <button
               type="submit"
-              className="btn pb-2 pt-2"
-              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+              className="btn pb-2 pt-2 btnGradient"
               onClick={onSee}
             >
               Xem
@@ -228,39 +227,40 @@ const ChamCong = () => {
           </div>
         </div>
       </div>
-      <table className="table">
+      <table className="table table-dark">
         <thead>
-          <tr className="table-secondary">
+          <tr>
             <th>Mã nhân viên</th>
             <th>Họ và tên</th>
             <th>Số giờ làm</th>
           </tr>
         </thead>
-        {table.map((row, idx) => {
-          return (
-            <tr style={{backgroundColor: '#fff'}}>
-              <td>{row.MaNV}</td>
-              <td>{row.TenNV}</td>
-              <td>
-                <input
-                  className="signature"
-                  type="text"
-                  value={row.SoGioLam}
-                  onChange={(e) => handleChange(e, row)}
-                  onKeyDown={isNumberPress}
-                  onPaste={isNumberCopy}
-                />
-              </td>
-            </tr>
-          );
-        })}
-        <tbody></tbody>
+        <tbody>
+          {table.map((row, idx) => {
+            return (
+              <tr>
+                <td>{row.MaNV}</td>
+                <td>{row.TenNV}</td>
+                <td>
+                  <input
+                    className="signature"
+                    type="text"
+                    value={row.SoGioLam}
+                    onChange={(e) => handleChange(e, row)}
+                    onKeyDown={isNumberPress}
+                    onPaste={isNumberCopy}
+                    style={{ backgroundColor: "#212529", color: "#FFF" }}
+                  />
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
       <div className="text-end">
         <button
           type="submit"
-          className="btn pb-2 pt-2 mt-2"
-          style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }}
+          className="btn pb-2 pt-2 mt-2 btnGradient"
           onClick={onSave}
         >
           Lưu

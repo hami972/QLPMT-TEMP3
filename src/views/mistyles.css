@@ -89,11 +89,6 @@ iframe {
   left: 0px;
 }
 
-.table {
-  border-collapse: separate;
-  border-spacing: 0 15px;
-}
-
 
 .themMaGiamGia {
   width: 700px;
@@ -340,7 +335,7 @@ iframe {
   margin-right: -490px;
   height: 100%;
   margin-top: -10px;
-  background-color: #FF8BD2;
+  background-color: #8298FF;
 }
 
 .content2 {

@@ -92,7 +92,7 @@ const ScheduleDetail = () => {
 
   return (
     <div>
-      <div className="row sticky-top">
+      <div className="row">
         <div className="col-auto mb-2">
           <button
             type="button"

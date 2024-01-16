@@ -154,8 +154,8 @@ const XemThongTinNhanVien = (props) => {
     setStaffs(searchResults);
   };
   return (
-    <div >
-      <div className="row" style={{color: '#fff'}}>
+    <div>
+      <div className="row" style={{ color: '#fff' }}>
         <div className="col-lg-4 col-md-6">
           <div className="mb-2"><b>Mã nhân viên</b></div>
           <input
@@ -250,8 +250,7 @@ const XemThongTinNhanVien = (props) => {
         </button>
         <button
           onClick={() => setModalOpen(true)}
-          className="btn pb-2 pt-2 mb-3"
-          style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+          className="btn pb-2 pt-2 mb-3 btnGradient"
         >
           Thêm
         </button>
@@ -260,9 +259,9 @@ const XemThongTinNhanVien = (props) => {
       <div className="text-end">
         <h1 class="noteVND">**Tính theo đơn vị VNĐ</h1>
       </div>
-      <table className="table">
+      <table className="table table-dark">
         <thead style={{ verticalAlign: "middle" }}>
-          <tr className="table-secondary">
+          <tr>
             <th>Mã nhân viên</th>
             <th>Họ và tên</th>
             <th>Số điện thoại</th>
@@ -274,33 +273,34 @@ const XemThongTinNhanVien = (props) => {
             <th></th>
           </tr>
         </thead>
-        {staffs.map((row, idx) => {
-          return (
-            <tr key={row.Id} style={{backgroundColor: '#fff'}}>
-              <td>{row.maNhanVien}</td>
-              <td>{row.tenNhanVien}</td>
-              <td>{row.soDienThoai}</td>
-              <td>{row.email}</td>
-              <td>{row.chucVu}</td>
-              <td>{row.bangCap}</td>
-              <td>{row.kinhNghiem}</td>
-              <td>{row.chiNhanh}</td>
-              <td className="fit">
-                <span className="actions">
-                  <BsFillTrashFill
-                    className="delete-btn"
-                    onClick={() => handleDeleteRow(idx)}
-                  />
-                  <BsFillPencilFill
-                    className="edit-btn"
-                    onClick={() => handleEditRow(idx)}
-                  />
-                </span>
-              </td>
-            </tr>
-          );
-        })}
-        <tbody></tbody>
+        <tbody>
+          {staffs.map((row, idx) => {
+            return (
+              <tr key={row.Id}>
+                <td>{row.maNhanVien}</td>
+                <td>{row.tenNhanVien}</td>
+                <td>{row.soDienThoai}</td>
+                <td>{row.email}</td>
+                <td>{row.chucVu}</td>
+                <td>{row.bangCap}</td>
+                <td>{row.kinhNghiem}</td>
+                <td>{row.chiNhanh}</td>
+                <td className="fit">
+                  <span className="actions">
+                    <BsFillTrashFill
+                      className="delete-btn"
+                      onClick={() => handleDeleteRow(idx)}
+                    />
+                    <BsFillPencilFill
+                      className="edit-btn"
+                      onClick={() => handleEditRow(idx)}
+                    />
+                  </span>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
       {modalOpen && (
         <FormChiTietNhanVien

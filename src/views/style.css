@@ -247,27 +247,27 @@ input[type="date"]:not(.has-value):before {
 }
 
 .maintab .nav-item>.active {
-    background-color: #8298FF !important;
+    background-color: #489BFF !important;
     color: white !important;
     font-size: 16px !important;
     font-weight: bold !important;
 }
 
 .maintab .nav-item>.nav-link:hover {
-    background-color: #FF8BD2 !important;
+    background-color: #A978F9 !important;
     color: white !important;
     font-size: 16px !important;
     font-weight: bold !important;
 }
 
 .subtab .nav-item>.active {
-    background-color: #8298FF !important;
+    background-color: #489BFF !important;
     color: white !important;
     font-weight: bold !important;
 }
 
 .subtab .nav-item>.nav-link:hover {
-    background-color: #FF8BD2 !important;
+    background-color: #A978F9 !important;
     color: white !important;
     font-weight: bold !important;
 }
@@ -589,5 +589,3 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 .headerPage {
     background: linear-gradient(to left, #489BFF 0%, #A978F9 100%);
 }
-
---bs-dropdown-link-active-bg {}

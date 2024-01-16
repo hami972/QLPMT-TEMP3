@@ -191,7 +191,7 @@ const XemBaoCaoCPPKTheoThang = (props) => {
     } else return [];
   };
   return (
-    <div>
+    <div style={{ color: '#fff' }}>
       <div className="row">
         <div className="col-lg-5 col-md-8">
           <div className="mb-2">
@@ -233,8 +233,7 @@ const XemBaoCaoCPPKTheoThang = (props) => {
           <div className="text-end">
             <button
               type="submit"
-              className="btn pb-2 pt-2 mb-3"
-              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+              className="btn pb-2 pt-2 mb-3 btnGradient"
               onClick={updateTable}
             >
               Xem

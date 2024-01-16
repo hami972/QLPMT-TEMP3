@@ -141,7 +141,7 @@ const ContactPage = (props) => {
                 <div className="row">
                     <div className="col-md-3"></div>
                     <div className="col-md-6" >
-                        <img alt="" src="images/phongkham.png" style={{ width: "100%" }} />
+                        <img alt="" src="images/phongkham.jpg" style={{ width: "100%" }} />
                     </div>
                     <div className="col-md-3"></div>
                 </div>

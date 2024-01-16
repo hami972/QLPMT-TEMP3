@@ -118,7 +118,7 @@ const XemBangLuong = (props) => {
   return (
     <div >
       {/* <form name="xemBangLuong" action="/action_page.php"> */}
-      <div class="row" style={{color: '#fff'}}>
+      <div class="row" style={{ color: '#fff' }}>
         <div className="col-lg-4 col-md-4">
           <div className="mb-2"><b>Chọn tháng, năm</b></div>
           <input
@@ -151,8 +151,7 @@ const XemBangLuong = (props) => {
           <div className="text-end mb-3 mt-3">
             <button
               type="submit"
-              className="btn pb-2 pt-2"
-              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+              className="btn pb-2 pt-2 btnGradient"
               // class="bluecolor block m-2 bg-0096FF hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
               onClick={calSalary}
             >
@@ -164,9 +163,9 @@ const XemBangLuong = (props) => {
       <div className="text-end">
         <h1 class="noteVND">**Tính theo đơn vị VNĐ</h1>
       </div>
-      <table class="table">
+      <table className="table table-dark">
         <thead style={{ verticalAlign: "middle" }}>
-          <tr class="table-secondary">
+          <tr>
             <th>Mã nhân viên</th>
             <th>Tên nhân viên</th>
             <th>Lương cơ bản/giờ</th>

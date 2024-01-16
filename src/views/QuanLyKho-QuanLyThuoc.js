@@ -106,7 +106,7 @@ const QuanLyThuoc = (props) => {
   }
   return (
     <div >
-      <div style={{color: '#fff'}}>
+      <div style={{ color: '#fff' }}>
         <div className='row'>
           <div className='col-lg-4 col-md-6'>
             <input
@@ -334,16 +334,14 @@ const QuanLyThuoc = (props) => {
       </div>
       <button
         type="submit"
-        className="btn pb-2 pt-2 mb-3 me-3 mt-3"
-        style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+        className="btn pb-2 pt-2 mb-3 me-3 mt-3 btnGradient"
         onClick={onSearch}
       >
         Tìm kiếm
       </button>
       <button
         onClick={() => setModalOpen(true)}
-        className="btn pb-2 pt-2 mb-3 mt-3"
-        style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+        className="btn pb-2 pt-2 mb-3 mt-3 btnGradient"
       >
         Thêm
       </button>
@@ -354,9 +352,9 @@ const QuanLyThuoc = (props) => {
         </h1>
         <h1 className="noteVND">**Tính theo đơn vị VNĐ</h1>
       </div>
-      <table className="table">
+      <table className="table table-dark">
         <thead style={{ verticalAlign: "middle" }}>
-          <tr className="table-secondary">
+          <tr>
             <th>Mã Thuốc</th>
             <th>Tên thuốc</th>
             <th>Số lượng nhập</th>
@@ -368,33 +366,34 @@ const QuanLyThuoc = (props) => {
             <th></th>
           </tr>
         </thead>
-        {drugs.map((row, idx) => {
-          return (
-            <tr key={row.Id} style={{backgroundColor: 'white'}}>
-              <td>{row.maThuoc}</td>
-              <td>{row.tenThuoc}</td>
-              <td>{row.soLuongNhap}</td>
-              <td>{row.soLuongTonKho}</td>
-              <td>{new Intl.NumberFormat("en-DE").format(row.donGiaNhap)}</td>
-              <td>{new Intl.NumberFormat("en-DE").format(row.donGia)}</td>
-              <td>{moment(new Date(row.hanSuDung)).format("DD/MM/YYYY")}</td>
-              <td>{moment(new Date(row.ngayNhap)).format("DD/MM/YYYY")}</td>
-              <td className="fit">
-                <span className="actions">
-                  <BsFillTrashFill
-                    className="delete-btn"
-                    onClick={() => handleDeleteRow(idx)}
-                  />
-                  <BsFillPencilFill
-                    className="edit-btn"
-                    onClick={() => handleEditRow(idx)}
-                  />
-                </span>
-              </td>
-            </tr>
-          );
-        })}
-        <tbody></tbody>
+        <tbody>
+          {drugs.map((row, idx) => {
+            return (
+              <tr key={row.Id}>
+                <td>{row.maThuoc}</td>
+                <td>{row.tenThuoc}</td>
+                <td>{row.soLuongNhap}</td>
+                <td>{row.soLuongTonKho}</td>
+                <td>{new Intl.NumberFormat("en-DE").format(row.donGiaNhap)}</td>
+                <td>{new Intl.NumberFormat("en-DE").format(row.donGia)}</td>
+                <td>{moment(new Date(row.hanSuDung)).format("DD/MM/YYYY")}</td>
+                <td>{moment(new Date(row.ngayNhap)).format("DD/MM/YYYY")}</td>
+                <td className="fit">
+                  <span className="actions">
+                    <BsFillTrashFill
+                      className="delete-btn"
+                      onClick={() => handleDeleteRow(idx)}
+                    />
+                    <BsFillPencilFill
+                      className="edit-btn"
+                      onClick={() => handleEditRow(idx)}
+                    />
+                  </span>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
       {modalOpen && (
         <FormThuoc

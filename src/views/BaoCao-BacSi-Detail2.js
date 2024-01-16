@@ -111,7 +111,7 @@ const XemBaoCaoBacSiTheoNam = (props) => {
   };
 
   return (
-    <div>
+    <div style={{ color: '#fff' }}>
       <div className="row">
         <div className="col-lg-5 col-md-8">
           <div className="mb-2">
@@ -153,8 +153,7 @@ const XemBaoCaoBacSiTheoNam = (props) => {
           <div className="text-end">
             <button
               type="submit"
-              className="btn pb-2 pt-2 mb-3"
-              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+              className="btn pb-2 pt-2 mb-3 btnGradient"
               onClick={updateTable}
             >
               Xem
@@ -166,9 +165,9 @@ const XemBaoCaoBacSiTheoNam = (props) => {
       <div className="text-end">
         <h1 class="noteVND">**Tính theo đơn vị VNĐ</h1>
       </div>
-      <table class="table">
+      <table class="table table-dark">
         <thead style={{ verticalAlign: "middle" }}>
-          <tr class="table-secondary">
+          <tr>
             <th>Mã bác sĩ</th>
             <th>Tên bác sĩ</th>
             <th>Số ca thực hiện</th>

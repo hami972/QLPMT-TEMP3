@@ -116,7 +116,7 @@ const XemBaoCaoChiNhanhTheoThang = (props) => {
   };
 
   return (
-    <div>
+    <div style={{ color: '#fff' }}>
       <div className="row">
         <div className="col-lg-4 col-md-6">
           <div className="mb-2">
@@ -135,8 +135,7 @@ const XemBaoCaoChiNhanhTheoThang = (props) => {
           <div className="text-end">
             <button
               type="submit"
-              className="btn pb-2 pt-2 mb-3"
-              style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+              className="btn pb-2 pt-2 mb-3 btnGradient"
               onClick={updateTable}
             >
               Xem
@@ -148,9 +147,9 @@ const XemBaoCaoChiNhanhTheoThang = (props) => {
       <div className="text-end">
         <h1 class="noteVND">**Tính theo đơn vị VNĐ</h1>
       </div>
-      <table class="table" >
+      <table class="table table-dark" >
         <thead style={{ verticalAlign: "middle" }}>
-          <tr class="table-secondary">
+          <tr>
             <th>Chi nhánh</th>
             <th>Số ca thực hiện</th>
             <th>Số dịch vụ thực hiện</th>

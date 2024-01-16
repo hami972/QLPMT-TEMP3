@@ -162,7 +162,7 @@ export const FormDichVu = ({
           </select>
           {errors && <div className="error">{errors}</div>}
           <div className="text-end">
-            <button type="submit" className="btn pb-2 pt-2 ps-3 pe-3 mt-2" style={{ backgroundColor: "#0096FF", color: "#FFFFFF" }} onClick={handleSubmit}>
+            <button type="submit" className="btn pb-2 pt-2 ps-3 pe-3 mt-2 btnGradient" onClick={handleSubmit}>
               Lưu
             </button>
           </div>

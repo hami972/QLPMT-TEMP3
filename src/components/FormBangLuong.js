@@ -14,7 +14,7 @@ export const FormMaGiamGia = ({ closeModal, onSubmit, defaultValue }) => {
 
   const validateForm = () => {
     if (formState.idMa && formState.phanTram && formState.thoiGianBatDau && formState.thoiGianKetThuc && formState.dichVuApDung) {
-        setErrors("");
+      setErrors("");
       return true;
     } else {
       let errorFields = [];
@@ -53,9 +53,9 @@ export const FormMaGiamGia = ({ closeModal, onSubmit, defaultValue }) => {
         <form>
           <div className="form-group">
             <label for="idMa">Id mã giảm giá</label>
-            <input name="idMa" 
-            onChange={handleChange} 
-            value={formState.idMa} />
+            <input name="idMa"
+              onChange={handleChange}
+              value={formState.idMa} />
           </div>
           <div className="form-group">
             <label for="phanTram">Phần trăm</label>
@@ -93,7 +93,7 @@ export const FormMaGiamGia = ({ closeModal, onSubmit, defaultValue }) => {
             />
           </div>
           {errors && <div className="error">{`Please include: ${errors}`}</div>}
-          <button type="submit" className="btnSummit" onClick={handleSubmit}>
+          <button type="submit" className="btnGradient" onClick={handleSubmit}>
             Lưu
           </button>
         </form>

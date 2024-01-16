@@ -65,7 +65,7 @@ const QuanLyMaGiamGia = (props) => {
 
   return (
     <div>
-      <div className="row" style={{color: '#fff'}}>
+      <div className="row" style={{ color: '#fff' }}>
         <div className="col-lg-4 col-md-6">
           <div className="mb-2"><b>ID mã giảm giá</b></div>
           <input
@@ -106,8 +106,7 @@ const QuanLyMaGiamGia = (props) => {
           </button>
           <button
             onClick={() => setModalOpen(true)}
-            className="btn pb-2 pt-2 mt-3 mb-3"
-            style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}>
+            className="btn pb-2 pt-2 mt-3 mb-3 btnGradient">
             Thêm
           </button>
         </div>
@@ -115,9 +114,9 @@ const QuanLyMaGiamGia = (props) => {
       <div className="text-end">
         <h1 class="noteVND">**Tính theo đơn vị VNĐ</h1>
       </div>
-      <table className="table">
+      <table className="table table-dark">
         <thead>
-          <tr className="table-secondary">
+          <tr>
             <th>ID mã giảm giá</th>
             <th>Phần trăm giảm</th>
             <th>Thời gian bắt đầu</th>

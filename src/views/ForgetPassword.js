@@ -16,21 +16,21 @@ const ForgetPassword = (props) => {
         forgotPassword(email)
     }
     return (
-        <div style={{backgroundColor: '#000'}} >
+        <div style={{ backgroundColor: '#000' }} >
             <TopNav />
             <section className="row g-0">
                 <div className="col-1" ></div>
                 <div className="col-sm-6 col-md-5 col-lg-4">
                     <div className="footer" style={{ border: "2px solid grey", borderRadius: "5px", boxShadow: "3px 3px #888888", marginTop: "70px" }} align="center">
                         <form>
-                            <h4 align="center" className="mt-5 mb-4">Quên mật khẩu</h4>
+                            <h4 align="center" className="mt-5 mb-4" style={{ color: "#FFFFFF" }}>Quên mật khẩu</h4>
                             <div className="mb-3 mt-3 col-10">
                                 <input type="text" className="form-control pb-3 pt-3" id="username" name="username" placeholder="Email đăng ký" onInvalid={e => e.target.setCustomValidity('Mời bạn nhập email')} onInput={e => e.target.setCustomValidity('')} required onChange={(e) => setEmail(e.target.value)} />
                             </div>
 
-                            <NavLink to="/sign_in" className="text-decoration-none d-flex justify-content-end col-10" style={{ fontWeight: "600", color: "black" }}>Quay về trang đăng nhập</NavLink>
+                            <NavLink to="/sign_in" className="text-decoration-none d-flex justify-content-end col-10" style={{ fontWeight: "600", color: "#FFF" }}>Quay về trang đăng nhập</NavLink>
                             <br></br>
-                            <button type="submit" className="btn col-10 pb-3 pt-3" onClick={(e) => { handleForgot(e) }} style={{ backgroundColor: "#8298FF", color: "#FFFFFF", marginBottom: "300px" }} >Gửi</button>
+                            <button type="submit" className="btn col-10 pb-3 pt-3 btnGradient" onClick={(e) => { handleForgot(e) }} style={{ color: "#FFFFFF", marginBottom: "300px" }} >Gửi</button>
                             {codePopup && (
                                 <CodeGetPass trigger="true">
                                     <div className="mb-3 mt-3 col-10">
@@ -45,7 +45,7 @@ const ForgetPassword = (props) => {
 
                 <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/kham5.png" style={{ width: "90%" }} align="right" /></div>
             </section >
-            <section className="mt-5" style={{ backgroundColor: "#F0F6FB" }}>
+            <section className="mt-5" style={{ background: 'linear-gradient(to right, #489BFF 0%, #A978F9 80%)', color: "#FFF" }}>
                 <div className="container">
                     <div className="row g-0">
                         <div className="col-md-6 pt-5 pb-5">

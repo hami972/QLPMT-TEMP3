@@ -72,7 +72,7 @@ const QuanLyChiNhanh = (props) => {
     }
     return (
         <div >
-            <div className='row' style={{color: '#fff'}}>
+            <div className='row' style={{ color: '#fff' }}>
                 <div className='col-lg-4 col-md-6'>
                     <input className="form-control pb-2 pt-2 mb-3" type="text" id="maChiNhanh" placeholder="Nhập mã chi nhánh" name="maChiNhanh"
                         onChange={handleChange} />
@@ -82,7 +82,7 @@ const QuanLyChiNhanh = (props) => {
                         onChange={handleChange} />
                 </div>
             </div>
-            <div className='col-auto row align-items-center' style={{color: '#fff'}}>
+            <div className='col-auto row align-items-center' style={{ color: '#fff' }}>
                 <div className='col-auto mt-2' style={{ fontWeight: "bold" }}>Số lượng phòng: </div>
                 <div className='col-auto row'>
                     <div className='col-auto row align-items-center gs-1'>
@@ -98,22 +98,20 @@ const QuanLyChiNhanh = (props) => {
                 </div>
             </div>
             <button type="submit"
-                className="btn pb-2 pt-2 me-3 mt-3 mb-3"
-                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+                className="btn pb-2 pt-2 me-3 mt-3 mb-3 btnGradient"
                 onClick={onSearch}>
                 Tìm kiếm
             </button>
             <button onClick={() => setModalOpen(true)}
-                className="btn pb-2 pt-2 me-3 mt-3 mb-3"
-                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}>
+                className="btn pb-2 pt-2 me-3 mt-3 mb-3 btnGradient">
                 Thêm
             </button>
             <div className="text-end">
                 <h1 class="noteVND">**Tính theo đơn vị VNĐ</h1>
             </div>
-            <table className="table" >
+            <table className="table table-dark">
                 <thead style={{ verticalAlign: "middle" }}>
-                    <tr className="table-secondary">
+                    <tr>
                         <th>Mã chi nhánh</th>
                         <th>Tên chi nhánh</th>
                         <th>Địa chỉ</th>
@@ -121,29 +119,29 @@ const QuanLyChiNhanh = (props) => {
                         <th></th>
                     </tr>
                 </thead>
-                {branchs.map((row, idx) => {
-                    return (
-                        <tr key={row.Id} style={{backgroundColor: '#fff'}}>
-                            <td>{row.maChiNhanh}</td>
-                            <td>{row.tenChiNhanh}</td>
-                            <td>{row.diaChi}</td>
-                            <td>{row.soLuongPhong}</td>
-                            <td className="fit">
-                                <span className="actions">
-                                    <BsFillTrashFill
-                                        className="delete-btn"
-                                        onClick={() => handleDeleteRow(idx)}
-                                    />
-                                    <BsFillPencilFill
-                                        className="edit-btn"
-                                        onClick={() => handleEditRow(idx)}
-                                    />
-                                </span>
-                            </td>
-                        </tr>
-                    );
-                })}
                 <tbody>
+                    {branchs.map((row, idx) => {
+                        return (
+                            <tr key={row.Id}>
+                                <td>{row.maChiNhanh}</td>
+                                <td>{row.tenChiNhanh}</td>
+                                <td>{row.diaChi}</td>
+                                <td>{row.soLuongPhong}</td>
+                                <td className="fit">
+                                    <span className="actions">
+                                        <BsFillTrashFill
+                                            className="delete-btn"
+                                            onClick={() => handleDeleteRow(idx)}
+                                        />
+                                        <BsFillPencilFill
+                                            className="edit-btn"
+                                            onClick={() => handleEditRow(idx)}
+                                        />
+                                    </span>
+                                </td>
+                            </tr>
+                        );
+                    })}
                 </tbody>
             </table>
             {

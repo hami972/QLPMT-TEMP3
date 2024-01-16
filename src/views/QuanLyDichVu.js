@@ -68,7 +68,7 @@ const QuanLyDichVu = (props) => {
     }
     return (
         <div>
-            <div className="row" style={{color: '#fff'}}>
+            <div className="row" style={{ color: '#fff' }}>
                 <div className='col-lg-4 col-md-6'>
                     <input className="form-control pb-2 pt-2 mb-3" type="text" id="maDichVu" placeholder="Nhập mã dịch vụ" name="maDichVu" value={searchCriteria.maDichVu}
                         onChange={handleChange} />
@@ -82,7 +82,7 @@ const QuanLyDichVu = (props) => {
                         onChange={handleChange} />
                 </div>
             </div>
-            <div className='row align-items-center' style={{color: '#fff'}}>
+            <div className='row align-items-center' style={{ color: '#fff' }}>
                 <div className='col-auto mt-2' style={{ fontWeight: "bold" }}>Đơn giá: </div>
                 <div className='col-auto row'>
                     <div className='col-auto row align-items-center gs-1'>
@@ -103,22 +103,20 @@ const QuanLyDichVu = (props) => {
             </div>
             <button
                 onClick={onSearch}
-                className="btn pb-2 pt-2 me-3 mt-3 mb-3"
-                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}
+                className="btn pb-2 pt-2 me-3 mt-3 mb-3 btnGradient"
             >
                 Tìm kiếm
             </button>
             <button onClick={() => setModalOpen(true)}
-                className="btn pb-2 pt-2 mt-3 mb-3"
-                style={{ backgroundColor: "#8298FF", color: "#FFFFFF" }}>
+                className="btn pb-2 pt-2 mt-3 mb-3 btnGradient">
                 Thêm
             </button>
             <div className="text-end">
                 <h1 class="noteVND">**Tính theo đơn vị VNĐ</h1>
             </div>
-            <table className="table" >
+            <table className="table table-dark" >
                 <thead style={{ verticalAlign: "middle" }}>
-                    <tr className="table-secondary">
+                    <tr>
                         <th>Mã dịch vụ</th>
                         <th>Tên dịch vụ</th>
                         <th>Loại dịch vụ</th>
@@ -128,37 +126,36 @@ const QuanLyDichVu = (props) => {
                         <th></th>
                     </tr>
                 </thead>
-                {services.map((row, idx) => {
-
-                    return (
-                        <tr key={row.Id} style={{backgroundColor: '#fff'}}>
-                            <td>{row.maDichVu}</td>
-                            <td>{row.tenDichVu}</td>
-                            <td>{row.loaiDichVu}</td>
-                            <td>{new Intl.NumberFormat('en-DE').format(row.giaDichVu)}</td>
-                            <td>
-                                {row.baoHanh}
-                            </td>
-                            <td>
-                                {row.coTraGop}
-                            </td>
-                            <td className="fit">
-                                <span className="actions">
-                                    <BsFillTrashFill
-                                        className="delete-btn"
-                                        onClick={() => handleDeleteRow(idx)}
-                                    />
-                                    <BsFillPencilFill
-                                        className="edit-btn"
-                                        onClick={() => handleEditRow(idx)}
-                                    />
-                                </span>
-                            </td>
-                        </tr>
-                    );
-                })}
-
                 <tbody>
+                    {services.map((row, idx) => {
+
+                        return (
+                            <tr key={row.Id} style={{ backgroundColor: '#fff' }}>
+                                <td>{row.maDichVu}</td>
+                                <td>{row.tenDichVu}</td>
+                                <td>{row.loaiDichVu}</td>
+                                <td>{new Intl.NumberFormat('en-DE').format(row.giaDichVu)}</td>
+                                <td>
+                                    {row.baoHanh}
+                                </td>
+                                <td>
+                                    {row.coTraGop}
+                                </td>
+                                <td className="fit">
+                                    <span className="actions">
+                                        <BsFillTrashFill
+                                            className="delete-btn"
+                                            onClick={() => handleDeleteRow(idx)}
+                                        />
+                                        <BsFillPencilFill
+                                            className="edit-btn"
+                                            onClick={() => handleEditRow(idx)}
+                                        />
+                                    </span>
+                                </td>
+                            </tr>
+                        );
+                    })}
                 </tbody>
             </table>
             {

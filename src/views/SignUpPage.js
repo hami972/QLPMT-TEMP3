@@ -91,7 +91,7 @@ const SignUpPage = (props) => {
 
     }
     return (
-        <div style={{backgroundColor: '#000', color: '#fff'}}>
+        <div style={{ backgroundColor: '#000', color: '#fff' }}>
             <TopNav />
             <section className="row g-0">
                 <div className="col-1"></div>
@@ -140,7 +140,7 @@ const SignUpPage = (props) => {
                 </div>
                 <div className="col-sm-5 col-md-6 col-lg-7 d-none d-sm-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
             </section >
-            <section className="mt-5" style={{backgroundColor: '#8298FF', color: '#fff'}}>
+            <section className="mt-5" style={{ background: 'linear-gradient(to right, #489BFF 0%, #A978F9 80%)', color: '#fff' }}>
                 <div className="container">
                     <div className="row g-0">
                         <div className="col-md-6 pt-5 pb-5">

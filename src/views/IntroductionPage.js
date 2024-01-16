@@ -202,7 +202,7 @@ const IntroductionPage = (props) => {
                             <button type="submit" className="btn pb-2 pt-2 px-5 pe-5 mt-4 btnGradient" onClick={() => moveToBookingPage()}>Đặt lịch ngay</button>
                         </div>
                     </div>
-                    <div className="col-md-6 d-none d-md-block"><img alt="" src="/images/phongkham.png" style={{ width: "90%" }} align="right" /></div>
+                    <div className="col-md-6 d-none d-md-block"><img alt="" src="/images/phongkham.jpg" style={{ width: "90%" }} align="right" /></div>
 
                 </section >
                 <section className="mt-5 container-fluid" style={{ backgroundImage: "url(/images/anhkhuyencao.png)", backgroundRepeat: "no-repeat", backgroundPosition: "center left 30%", backgroundSize: "cover" }}>
@@ -211,15 +211,15 @@ const IntroductionPage = (props) => {
                         <div className="col-md-5">
                             <p><h5 style={{ color: "white" }}>CÁC CHUYÊN GIA LUÔN KHUYẾN CÁO</h5></p>
                             <p>
-                                <span style={{ fontSize: "20px", color: "#8298FF" }}>Đừng bao giờ quên vệ sinh răng miệng</span><br />
+                                <span style={{ fontSize: "20px" }} className='textGradient'>Đừng bao giờ quên vệ sinh răng miệng</span><br />
                                 <span style={{ color: "white" }}>Hãy luôn vệ sinh sạch sẽ răng miệng của chính bản thân bằng cách thường xuyên súc miệng và đánh răng ít nhất 2 lần/ngày.</span>
                             </p>
                             <p className="mt-4">
-                                <span style={{ fontSize: "20px", color: "#8298FF" }}>Đừng quá mạnh tay khi chải răng</span><br />
+                                <span style={{ fontSize: "20px" }} className='textGradient'>Đừng quá mạnh tay khi chải răng</span><br />
                                 <span style={{ color: "white" }}>Không nên đánh răng quá mạnh, nên đánh răng nhẹ nhàng theo vòng tròn bao gồm cả mặt trong, mặt ngoài của răng và lưỡi.</span>
                             </p>
                             <p className="mt-4">
-                                <span style={{ fontSize: "20px", color: "#8298FF" }}>Thăm khám răng miệng thường xuyên</span><br />
+                                <span style={{ fontSize: "20px" }} className='textGradient'>Thăm khám răng miệng thường xuyên</span><br />
                                 <span style={{ color: "white" }}>Nên khám răng theo khuyến nghị của nha sĩ, khoảng 6 tháng/lần. Khi có các dấu hiệu sau đề nghị đi khám ngay: Đau răng, sưng hoặc xuất huyết lưỡi, sưng lợi và vùng xương hàm, có vết loét niêm mạc miệng.</span>
                             </p>
                         </div>
